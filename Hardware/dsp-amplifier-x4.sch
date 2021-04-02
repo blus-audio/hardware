@@ -62,7 +62,7 @@ Text Label 1450 2350 0    60   ~ 0
 DSP_CLOCK
 Wire Wire Line
 	1450 2350 2050 2350
-Text Label 11100 3350 0    60   ~ 0
+Text Label 12200 3300 0    60   ~ 0
 AMP1_CLOCK
 Text Label 10350 3700 0    60   ~ 0
 SPDIF_IN
@@ -76,12 +76,8 @@ Text Label 8600 3700 0    60   ~ 0
 SPDIF_OUT
 Wire Wire Line
 	8600 3700 9100 3700
-Text Label 4250 2150 0    60   ~ 0
+Text Label 4700 2150 2    60   ~ 0
 SPDIF_OUT
-Wire Wire Line
-	4800 2150 4200 2150
-NoConn ~ 2400 4750
-NoConn ~ 2400 4850
 NoConn ~ 2400 4950
 NoConn ~ 2400 5050
 NoConn ~ 2400 5150
@@ -120,36 +116,36 @@ Connection ~ 3300 5600
 $Comp
 L Device:Q_PNP_BCE Q1
 U 1 1 606AAFD1
-P 3750 8450
-F 0 "Q1" V 3985 8450 50  0000 C CNN
-F 1 "STD2805" V 4076 8450 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 3950 8550 50  0001 C CNN
-F 3 "~" H 3750 8450 50  0001 C CNN
-	1    3750 8450
+P 3350 6700
+F 0 "Q1" V 3585 6700 50  0000 C CNN
+F 1 "STD2805" V 3676 6700 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 3550 6800 50  0001 C CNN
+F 3 "~" H 3350 6700 50  0001 C CNN
+	1    3350 6700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 606B0F35
-P 3600 8800
-F 0 "R1" V 3393 8800 50  0000 C CNN
-F 1 "4.3k" V 3484 8800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3530 8800 50  0001 C CNN
-F 3 "~" H 3600 8800 50  0001 C CNN
-	1    3600 8800
+P 3200 7050
+F 0 "R1" V 2993 7050 50  0000 C CNN
+F 1 "4.3k" V 3084 7050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3130 7050 50  0001 C CNN
+F 3 "~" H 3200 7050 50  0001 C CNN
+	1    3200 7050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3850 8650 3850 8800
+	3450 6900 3450 7050
 Wire Wire Line
-	3850 8800 3750 8800
+	3450 7050 3350 7050
 Wire Wire Line
-	3550 8450 3400 8450
+	3150 6700 3000 6700
 Wire Wire Line
-	3400 8450 3400 8800
+	3000 6700 3000 7050
 Wire Wire Line
-	3400 8800 3450 8800
-Text Notes 2950 7950 0    60   ~ 0
+	3000 7050 3050 7050
+Text Notes 2550 6200 0    60   ~ 0
 DVDD regulator
 $Comp
 L power:+5VD #PWR0118
@@ -200,160 +196,160 @@ Wire Wire Line
 $Comp
 L Connector:Raspberry_Pi_2_3 J1
 U 1 1 60829D91
-P 13550 7450
-F 0 "J1" H 13550 8931 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 13550 8840 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 13550 7450 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 13550 7450 50  0001 C CNN
-	1    13550 7450
+P 9650 7650
+F 0 "J1" H 9650 9131 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 9650 9040 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 9650 7650 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 9650 7650 50  0001 C CNN
+	1    9650 7650
 	1    0    0    -1  
 $EndComp
-Text Label 11700 7250 0    60   ~ 0
+Text Label 7800 7450 0    60   ~ 0
 PI_LRCLK
-Text Label 12050 7050 0    60   ~ 0
+Text Label 8150 7250 0    60   ~ 0
 PI_BCLK
-Text Label 11700 7450 0    60   ~ 0
+Text Label 7800 7650 0    60   ~ 0
 PI_SDATA_O
 $Comp
 L dsp-amplifier-x4-rescue:GND #PWR0133
 U 1 1 6084472A
-P 13150 8850
-F 0 "#PWR0133" H 13150 8600 50  0001 C CNN
-F 1 "GND" H 13150 8700 50  0000 C CNN
-F 2 "" H 13150 8850 50  0001 C CNN
-F 3 "" H 13150 8850 50  0001 C CNN
-	1    13150 8850
+P 9250 9050
+F 0 "#PWR0133" H 9250 8800 50  0001 C CNN
+F 1 "GND" H 9250 8900 50  0000 C CNN
+F 2 "" H 9250 9050 50  0001 C CNN
+F 3 "" H 9250 9050 50  0001 C CNN
+	1    9250 9050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13150 8750 13150 8800
+	9250 8950 9250 9000
 Wire Wire Line
-	13150 8800 13250 8800
+	9250 9000 9350 9000
 Wire Wire Line
-	13250 8800 13250 8750
-Connection ~ 13150 8800
+	9350 9000 9350 8950
+Connection ~ 9250 9000
 Wire Wire Line
-	13150 8800 13150 8850
+	9250 9000 9250 9050
 Wire Wire Line
-	13250 8800 13350 8800
+	9350 9000 9450 9000
 Wire Wire Line
-	13350 8800 13350 8750
-Connection ~ 13250 8800
+	9450 9000 9450 8950
+Connection ~ 9350 9000
 Wire Wire Line
-	13350 8800 13450 8800
+	9450 9000 9550 9000
 Wire Wire Line
-	13450 8800 13450 8750
-Connection ~ 13350 8800
+	9550 9000 9550 8950
+Connection ~ 9450 9000
 Wire Wire Line
-	13450 8800 13550 8800
+	9550 9000 9650 9000
 Wire Wire Line
-	13550 8800 13550 8750
-Connection ~ 13450 8800
+	9650 9000 9650 8950
+Connection ~ 9550 9000
 Wire Wire Line
-	13550 8800 13650 8800
+	9650 9000 9750 9000
 Wire Wire Line
-	13650 8800 13650 8750
-Connection ~ 13550 8800
+	9750 9000 9750 8950
+Connection ~ 9650 9000
 Wire Wire Line
-	13650 8800 13750 8800
+	9750 9000 9850 9000
 Wire Wire Line
-	13750 8800 13750 8750
-Connection ~ 13650 8800
+	9850 9000 9850 8950
+Connection ~ 9750 9000
 Wire Wire Line
-	13750 8800 13850 8800
+	9850 9000 9950 9000
 Wire Wire Line
-	13850 8800 13850 8750
-Connection ~ 13750 8800
+	9950 9000 9950 8950
+Connection ~ 9850 9000
 $Comp
 L power:+5VD #PWR0134
 U 1 1 6086659C
-P 13350 5850
-F 0 "#PWR0134" H 13350 5700 50  0001 C CNN
-F 1 "+5VD" H 13365 6023 50  0000 C CNN
-F 2 "" H 13350 5850 50  0001 C CNN
-F 3 "" H 13350 5850 50  0001 C CNN
-	1    13350 5850
+P 9450 6050
+F 0 "#PWR0134" H 9450 5900 50  0001 C CNN
+F 1 "+5VD" H 9465 6223 50  0000 C CNN
+F 2 "" H 9450 6050 50  0001 C CNN
+F 3 "" H 9450 6050 50  0001 C CNN
+	1    9450 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13350 5850 13350 6100
+	9450 6050 9450 6300
 Wire Wire Line
-	13450 6150 13450 6100
+	9550 6350 9550 6300
 Wire Wire Line
-	13450 6100 13350 6100
-Connection ~ 13350 6100
+	9550 6300 9450 6300
+Connection ~ 9450 6300
 Wire Wire Line
-	13350 6100 13350 6150
-Text Label 14550 6950 0    60   ~ 0
+	9450 6300 9450 6350
+Text Label 10650 7150 0    60   ~ 0
 PI_SCL
-Text Label 14550 6850 0    60   ~ 0
+Text Label 10650 7050 0    60   ~ 0
 PI_SDA
-Text Label 14550 7650 0    60   ~ 0
+Text Label 10650 7850 0    60   ~ 0
 PI_NCE0
-Text Label 14550 7550 0    60   ~ 0
+Text Label 10650 7750 0    60   ~ 0
 PI_NCE1
 Wire Wire Line
-	14350 7550 14950 7550
+	10450 7750 11050 7750
 Wire Wire Line
-	14950 7650 14350 7650
-Text Label 14550 7850 0    60   ~ 0
+	11050 7850 10450 7850
+Text Label 10650 8050 0    60   ~ 0
 PI_MOSI0
-Text Label 14550 7750 0    60   ~ 0
+Text Label 10650 7950 0    60   ~ 0
 PI_MISO0
 Wire Wire Line
-	14350 7750 14950 7750
+	10450 7950 11050 7950
 Wire Wire Line
-	14950 7850 14350 7850
-Text Label 14550 7950 0    60   ~ 0
+	11050 8050 10450 8050
+Text Label 10650 8150 0    60   ~ 0
 PI_SCLK0
 Wire Wire Line
-	14950 7950 14350 7950
-Text Label 12050 8150 0    60   ~ 0
+	11050 8150 10450 8150
+Text Label 8150 8350 0    60   ~ 0
 PI_MUTE
-Text Label 12050 6950 0    60   ~ 0
+Text Label 8150 7150 0    60   ~ 0
 DSP_NRESET
-Text Label 12050 7950 0    60   ~ 0
+Text Label 8150 8150 0    60   ~ 0
 DSP_SELFBOOT
 $Sheet
-S 11750 2350 1400 1400
+S 12850 2300 1400 1400
 U 5AF9FF80
 F0 "I2S-AMP-2CH" 60
 F1 "I2S-AMP-2CH.sch" 60
-F2 "NSPK_FAULT" O R 13150 2650 60 
-F3 "NSPK_SD" I L 11750 2800 60 
-F4 "LRCK" I L 11750 3050 60 
-F5 "SDIN" I L 11750 3250 60 
-F6 "SCLK" I L 11750 3150 60 
-F7 "MCLK" I L 11750 3350 60 
-F8 "SPK_SLEEP" I L 11750 2700 60 
-F9 "SPK_GAIN0" I L 11750 3550 60 
-F10 "SPK_GAIN1" I L 11750 3650 60 
-F11 "SKP_OUTA+" O R 13150 2850 60 
-F12 "SKP_OUTA-" O R 13150 2950 60 
-F13 "SKP_OUTB-" O R 13150 3300 60 
-F14 "SKP_OUTB+" O R 13150 3200 60 
+F2 "NSPK_FAULT" O R 14250 2600 60 
+F3 "NSPK_SD" I L 12850 2750 60 
+F4 "LRCK" I L 12850 3000 60 
+F5 "SDIN" I L 12850 3200 60 
+F6 "SCLK" I L 12850 3100 60 
+F7 "MCLK" I L 12850 3300 60 
+F8 "SPK_SLEEP" I L 12850 2650 60 
+F9 "SPK_GAIN0" I L 12850 3500 60 
+F10 "SPK_GAIN1" I L 12850 3600 60 
+F11 "SKP_OUTA+" O R 14250 2800 60 
+F12 "SKP_OUTA-" O R 14250 2900 60 
+F13 "SKP_OUTB-" O R 14250 3250 60 
+F14 "SKP_OUTB+" O R 14250 3150 60 
 $EndSheet
-Text Label 11100 3050 0    60   ~ 0
+Text Label 12200 3000 0    60   ~ 0
 AMP1_LRCLK
 Wire Wire Line
-	11100 3050 11750 3050
-Text Label 11100 3150 0    60   ~ 0
-AMP1_SCLK
+	12200 3000 12850 3000
+Text Label 12200 3100 0    60   ~ 0
+AMP1_BCLK
 Wire Wire Line
-	11100 3150 11750 3150
-Text Label 11100 3250 0    60   ~ 0
+	12200 3100 12850 3100
+Text Label 12200 3200 0    60   ~ 0
 AMP1_SDIN
 Wire Wire Line
-	11100 3250 11750 3250
-Text Label 4600 3650 0    60   ~ 0
+	12200 3200 12850 3200
+Text Label 5200 3650 2    60   ~ 0
 AMP1_LRCLK
 Wire Wire Line
 	5200 3650 4550 3650
-Text Label 4600 3750 0    60   ~ 0
-AMP1_SCLK
+Text Label 5200 3750 2    60   ~ 0
+AMP1_BCLK
 Wire Wire Line
 	5200 3750 4550 3750
-Text Label 4600 3850 0    60   ~ 0
+Text Label 5200 3850 2    60   ~ 0
 AMP1_SDIN
 Wire Wire Line
 	5200 3850 4550 3850
@@ -412,8 +408,8 @@ Wire Wire Line
 	11650 1600 11650 1550
 Wire Wire Line
 	11650 1600 11950 1600
-NoConn ~ 13650 6150
-NoConn ~ 13750 6150
+NoConn ~ 9750 6350
+NoConn ~ 9850 6350
 $Comp
 L Device:R R28
 U 1 1 606AD43F
@@ -521,12 +517,12 @@ $EndComp
 $Comp
 L power:+3.3V #PWR0154
 U 1 1 60741D4E
-P 2500 8100
-F 0 "#PWR0154" H 2500 7950 50  0001 C CNN
-F 1 "+3.3V" H 2515 8273 50  0000 C CNN
-F 2 "" H 2500 8100 50  0001 C CNN
-F 3 "" H 2500 8100 50  0001 C CNN
-	1    2500 8100
+P 2100 6350
+F 0 "#PWR0154" H 2100 6200 50  0001 C CNN
+F 1 "+3.3V" H 2115 6523 50  0000 C CNN
+F 2 "" H 2100 6350 50  0001 C CNN
+F 3 "" H 2100 6350 50  0001 C CNN
+	1    2100 6350
 	1    0    0    -1  
 $EndComp
 Text Label 4250 4650 0    60   ~ 0
@@ -646,9 +642,9 @@ DSP_NRESET
 Text Label 1700 4450 0    60   ~ 0
 DSP_SELFBOOT
 Wire Wire Line
-	14950 6850 14350 6850
+	11050 7050 10450 7050
 Wire Wire Line
-	14950 6950 14350 6950
+	11050 7150 10450 7150
 Text Label 4250 4950 0    60   ~ 0
 PI_SCL
 Text Label 4250 4850 0    60   ~ 0
@@ -658,37 +654,37 @@ Wire Wire Line
 Wire Wire Line
 	1200 4550 2400 4550
 Wire Wire Line
-	12050 6950 12750 6950
+	8150 7150 8850 7150
 Wire Wire Line
-	12050 7050 12750 7050
+	8150 7250 8850 7250
 Wire Wire Line
-	11700 7250 12400 7250
+	7800 7450 8500 7450
 Wire Wire Line
-	11700 7450 12400 7450
+	7800 7650 8500 7650
 Wire Wire Line
-	12050 7950 12750 7950
+	8150 8150 8850 8150
 Wire Wire Line
-	12050 8150 12750 8150
-Text Label 4600 4050 0    60   ~ 0
+	8150 8350 8850 8350
+Text Label 5200 4050 2    60   ~ 0
 AMP2_LRCLK
 Wire Wire Line
 	5200 4050 4550 4050
-Text Label 4600 4150 0    60   ~ 0
-AMP2_SCLK
+Text Label 5200 4150 2    60   ~ 0
+AMP2_BCLK
 Wire Wire Line
 	5200 4150 4550 4150
-Text Label 4600 4250 0    60   ~ 0
+Text Label 5200 4250 2    60   ~ 0
 AMP2_SDIN
 Wire Wire Line
 	5200 4250 4550 4250
-Text Label 4600 3050 0    60   ~ 0
+Text Label 5200 3050 2    60   ~ 0
 PI_SDATA_I
 Wire Wire Line
 	4550 3050 5200 3050
-Text Label 11700 7350 0    60   ~ 0
+Text Label 7800 7550 0    60   ~ 0
 PI_SDATA_I
 Wire Wire Line
-	11700 7350 12400 7350
+	7800 7550 8500 7550
 $Comp
 L Connector:Conn_WallPlug_Earth P1
 U 1 1 609B0C7C
@@ -738,13 +734,13 @@ $EndComp
 Wire Wire Line
 	2400 2350 2350 2350
 Wire Wire Line
-	11100 3350 11750 3350
+	12200 3300 12850 3300
 $Comp
 L Device:R R22
 U 1 1 60ABFB30
 P 4400 3650
-F 0 "R22" V 4193 3650 50  0000 C CNN
-F 1 "33" V 4284 3650 50  0000 C CNN
+F 0 "R22" V 4193 3650 50  0001 C CNN
+F 1 "33" V 4284 3650 50  0001 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4330 3650 50  0001 C CNN
 F 3 "~" H 4400 3650 50  0001 C CNN
 	1    4400 3650
@@ -832,48 +828,48 @@ Wire Wire Line
 $Comp
 L Device:R R29
 U 1 1 60BB7964
-P 12550 7250
-F 0 "R29" V 12343 7250 50  0000 C CNN
-F 1 "33" V 12434 7250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 12480 7250 50  0001 C CNN
-F 3 "~" H 12550 7250 50  0001 C CNN
-	1    12550 7250
+P 8650 7450
+F 0 "R29" V 8443 7450 50  0001 C CNN
+F 1 "33" V 8534 7450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8580 7450 50  0001 C CNN
+F 3 "~" H 8650 7450 50  0001 C CNN
+	1    8650 7450
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R30
 U 1 1 60BB796A
-P 12550 7350
-F 0 "R30" V 12343 7350 50  0001 C CNN
-F 1 "33" V 12434 7350 50  0001 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 12480 7350 50  0001 C CNN
-F 3 "~" H 12550 7350 50  0001 C CNN
-	1    12550 7350
+P 8650 7550
+F 0 "R30" V 8443 7550 50  0001 C CNN
+F 1 "33" V 8534 7550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8580 7550 50  0001 C CNN
+F 3 "~" H 8650 7550 50  0001 C CNN
+	1    8650 7550
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R31
 U 1 1 60BB7970
-P 12550 7450
-F 0 "R31" V 12343 7450 50  0001 C CNN
-F 1 "33" V 12434 7450 50  0001 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 12480 7450 50  0001 C CNN
-F 3 "~" H 12550 7450 50  0001 C CNN
-	1    12550 7450
+P 8650 7650
+F 0 "R31" V 8443 7650 50  0001 C CNN
+F 1 "33" V 8534 7650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8580 7650 50  0001 C CNN
+F 3 "~" H 8650 7650 50  0001 C CNN
+	1    8650 7650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	12700 7250 12750 7250
+	8800 7450 8850 7450
 Wire Wire Line
-	12750 7350 12700 7350
+	8850 7550 8800 7550
 Wire Wire Line
-	12700 7450 12750 7450
+	8800 7650 8850 7650
 $Comp
 L Device:R R21
 U 1 1 60C74D47
 P 4400 3050
-F 0 "R21" V 4193 3050 50  0000 C CNN
-F 1 "33" V 4284 3050 50  0000 C CNN
+F 0 "R21" V 4193 3050 50  0001 C CNN
+F 1 "33" V 4284 3050 50  0001 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4330 3050 50  0001 C CNN
 F 3 "~" H 4400 3050 50  0001 C CNN
 	1    4400 3050
@@ -882,20 +878,20 @@ $EndComp
 Wire Wire Line
 	4250 3050 4200 3050
 Wire Wire Line
-	3850 8250 3850 8200
+	3450 6500 3450 6450
 Wire Wire Line
-	3850 8800 4250 8800
-Connection ~ 3850 8800
+	3450 7050 3850 7050
+Connection ~ 3450 7050
 Wire Wire Line
-	3850 8200 4250 8200
+	3450 6450 3850 6450
 Wire Notes Line
-	2900 7800 4450 7800
+	2500 6050 4050 6050
 Wire Notes Line
-	4450 7800 4450 8900
+	4050 6050 4050 7150
 Wire Notes Line
-	4450 8900 2900 8900
+	4050 7150 2500 7150
 Wire Notes Line
-	2900 8900 2900 7800
+	2500 7150 2500 6050
 $Comp
 L Device:R R17
 U 1 1 60E8DE0D
@@ -997,71 +993,71 @@ Wire Wire Line
 $Comp
 L Device:Ferrite_Bead FB?
 U 1 1 612BC3BD
-P 1800 8600
+P 1400 6850
 AR Path="/5AFACEFB/612BC3BD" Ref="FB?"  Part="1" 
 AR Path="/612BC3BD" Ref="FB1"  Part="1" 
-F 0 "FB1" V 1526 8600 50  0000 C CNN
-F 1 "600/100M" V 1617 8600 50  0000 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder" V 1730 8600 50  0001 C CNN
-F 3 "~" H 1800 8600 50  0001 C CNN
-	1    1800 8600
+F 0 "FB1" V 1126 6850 50  0000 C CNN
+F 1 "600/100M" V 1217 6850 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder" V 1330 6850 50  0001 C CNN
+F 3 "~" H 1400 6850 50  0001 C CNN
+	1    1400 6850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1400 8600 1650 8600
+	1000 6850 1250 6850
 Wire Wire Line
-	1950 8600 2050 8600
+	1550 6850 1650 6850
 Text Label 1500 1450 0    60   ~ 0
 PVDD
 Wire Wire Line
 	1500 1450 1800 1450
 Connection ~ 1800 1450
-Text Label 4250 8800 2    60   ~ 0
+Text Label 3850 7050 2    60   ~ 0
 PVDD
 Text Label 3100 1250 3    60   ~ 0
 PVDD
 $Comp
 L dsp-amplifier-x4-rescue:Capacitor C?
 U 1 1 6136E0F4
-P 2050 8800
+P 1650 7050
 AR Path="/5AF9FF80/6136E0F4" Ref="C?"  Part="1" 
 AR Path="/6136E0F4" Ref="C21"  Part="1" 
-F 0 "C21" H 2100 8900 50  0000 L CNN
-F 1 "4.7u" H 2100 8750 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 1750 8940 50  0001 C CNN
-F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 1750 8940 50  0001 C CNN
-F 4 "GRM31CR71H475KA12L" H 2050 8800 60  0001 C CNN "Mfr.Nr."
-	1    2050 8800
+F 0 "C21" H 1700 7150 50  0000 L CNN
+F 1 "4.7u" H 1700 7000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 1350 7190 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 1350 7190 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 1650 7050 60  0001 C CNN "Mfr.Nr."
+	1    1650 7050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2050 8600 2050 8650
-Connection ~ 2050 8600
+	1650 6850 1650 6900
+Connection ~ 1650 6850
 Wire Wire Line
-	2050 8900 2050 8950
+	1650 7150 1650 7200
 $Comp
 L dsp-amplifier-x4-rescue:GND #PWR0106
 U 1 1 613A052D
-P 2050 8950
-F 0 "#PWR0106" H 2050 8700 50  0001 C CNN
-F 1 "GND" H 2050 8800 50  0000 C CNN
-F 2 "" H 2050 8950 50  0001 C CNN
-F 3 "" H 2050 8950 50  0001 C CNN
-	1    2050 8950
+P 1650 7200
+F 0 "#PWR0106" H 1650 6950 50  0001 C CNN
+F 1 "GND" H 1650 7050 50  0000 C CNN
+F 2 "" H 1650 7200 50  0001 C CNN
+F 3 "" H 1650 7200 50  0001 C CNN
+	1    1650 7200
 	1    0    0    -1  
 $EndComp
 $Comp
 L dsp-amplifier-x4-rescue:Capacitor C?
 U 1 1 613B3B1E
-P 5850 8500
+P 5450 6750
 AR Path="/5AF9FF80/613B3B1E" Ref="C?"  Part="1" 
 AR Path="/613B3B1E" Ref="C22"  Part="1" 
-F 0 "C22" H 5900 8600 50  0000 L CNN
-F 1 "4.7u" H 5900 8450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 5550 8640 50  0001 C CNN
-F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 5550 8640 50  0001 C CNN
-F 4 "GRM31CR71H475KA12L" H 5850 8500 60  0001 C CNN "Mfr.Nr."
-	1    5850 8500
+F 0 "C22" H 5500 6850 50  0000 L CNN
+F 1 "4.7u" H 5500 6700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 5150 6890 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 5150 6890 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 5450 6750 60  0001 C CNN "Mfr.Nr."
+	1    5450 6750
 	1    0    0    -1  
 $EndComp
 Text Label 3200 1250 3    60   ~ 0
@@ -1074,168 +1070,168 @@ Wire Wire Line
 	3200 1250 3200 1750
 Wire Wire Line
 	3300 1250 3300 1750
-Text Label 1700 8300 2    60   ~ 0
+Text Label 1300 6550 2    60   ~ 0
 PVDD
-Text Label 1700 8200 2    60   ~ 0
+Text Label 1300 6450 2    60   ~ 0
 AVDD
-Text Label 2450 8600 2    60   ~ 0
+Text Label 2050 6850 2    60   ~ 0
 IOVDD
-Text Label 5500 7950 3    60   ~ 0
+Text Label 5100 6200 3    60   ~ 0
 PVDD
 Wire Wire Line
-	5500 8350 5500 7950
-Text Label 5150 7950 3    60   ~ 0
+	5100 6600 5100 6200
+Text Label 4750 6200 3    60   ~ 0
 AVDD
-Text Label 4800 7950 3    60   ~ 0
+Text Label 4400 6200 3    60   ~ 0
 IOVDD
 Wire Wire Line
-	5150 8350 5150 7950
+	4750 6600 4750 6200
 Wire Wire Line
-	4800 8350 4800 7950
+	4400 6600 4400 6200
 $Comp
 L dsp-amplifier-x4-rescue:Capacitor C?
 U 1 1 6183527A
-P 4800 8500
+P 4400 6750
 AR Path="/5AF9FF80/6183527A" Ref="C?"  Part="1" 
 AR Path="/6183527A" Ref="C23"  Part="1" 
-F 0 "C23" H 4850 8600 50  0000 L CNN
-F 1 "4.7u" H 4850 8450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 4500 8640 50  0001 C CNN
-F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 4500 8640 50  0001 C CNN
-F 4 "GRM31CR71H475KA12L" H 4800 8500 60  0001 C CNN "Mfr.Nr."
-	1    4800 8500
+F 0 "C23" H 4450 6850 50  0000 L CNN
+F 1 "4.7u" H 4450 6700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 4100 6890 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 4100 6890 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 4400 6750 60  0001 C CNN "Mfr.Nr."
+	1    4400 6750
 	1    0    0    -1  
 $EndComp
 $Comp
 L dsp-amplifier-x4-rescue:Capacitor C?
 U 1 1 61847F56
-P 5150 8500
+P 4750 6750
 AR Path="/5AF9FF80/61847F56" Ref="C?"  Part="1" 
 AR Path="/61847F56" Ref="C24"  Part="1" 
-F 0 "C24" H 5200 8600 50  0000 L CNN
-F 1 "4.7u" H 5200 8450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 4850 8640 50  0001 C CNN
-F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 4850 8640 50  0001 C CNN
-F 4 "GRM31CR71H475KA12L" H 5150 8500 60  0001 C CNN "Mfr.Nr."
-	1    5150 8500
+F 0 "C24" H 4800 6850 50  0000 L CNN
+F 1 "4.7u" H 4800 6700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 4450 6890 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 4450 6890 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 4750 6750 60  0001 C CNN "Mfr.Nr."
+	1    4750 6750
 	1    0    0    -1  
 $EndComp
 $Comp
 L dsp-amplifier-x4-rescue:Capacitor C?
 U 1 1 6186B6D9
-P 5500 8500
+P 5100 6750
 AR Path="/5AF9FF80/6186B6D9" Ref="C?"  Part="1" 
 AR Path="/6186B6D9" Ref="C28"  Part="1" 
-F 0 "C28" H 5550 8600 50  0000 L CNN
-F 1 "4.7u" H 5550 8450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 5200 8640 50  0001 C CNN
-F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 5200 8640 50  0001 C CNN
-F 4 "GRM31CR71H475KA12L" H 5500 8500 60  0001 C CNN "Mfr.Nr."
-	1    5500 8500
+F 0 "C28" H 5150 6850 50  0000 L CNN
+F 1 "4.7u" H 5150 6700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 4800 6890 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 4800 6890 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 5100 6750 60  0001 C CNN "Mfr.Nr."
+	1    5100 6750
 	1    0    0    -1  
 $EndComp
 $Comp
 L dsp-amplifier-x4-rescue:GND #PWR0113
 U 1 1 6186C217
-P 5150 8650
-F 0 "#PWR0113" H 5150 8400 50  0001 C CNN
-F 1 "GND" H 5150 8500 50  0000 C CNN
-F 2 "" H 5150 8650 50  0001 C CNN
-F 3 "" H 5150 8650 50  0001 C CNN
-	1    5150 8650
+P 4750 6900
+F 0 "#PWR0113" H 4750 6650 50  0001 C CNN
+F 1 "GND" H 4750 6750 50  0000 C CNN
+F 2 "" H 4750 6900 50  0001 C CNN
+F 3 "" H 4750 6900 50  0001 C CNN
+	1    4750 6900
 	1    0    0    -1  
 $EndComp
 $Comp
 L dsp-amplifier-x4-rescue:GND #PWR0147
 U 1 1 6186CD72
-P 5500 8650
-F 0 "#PWR0147" H 5500 8400 50  0001 C CNN
-F 1 "GND" H 5500 8500 50  0000 C CNN
-F 2 "" H 5500 8650 50  0001 C CNN
-F 3 "" H 5500 8650 50  0001 C CNN
-	1    5500 8650
+P 5100 6900
+F 0 "#PWR0147" H 5100 6650 50  0001 C CNN
+F 1 "GND" H 5100 6750 50  0000 C CNN
+F 2 "" H 5100 6900 50  0001 C CNN
+F 3 "" H 5100 6900 50  0001 C CNN
+	1    5100 6900
 	1    0    0    -1  
 $EndComp
 $Comp
 L dsp-amplifier-x4-rescue:GND #PWR0159
 U 1 1 6186D13D
-P 4800 8650
-F 0 "#PWR0159" H 4800 8400 50  0001 C CNN
-F 1 "GND" H 4800 8500 50  0000 C CNN
-F 2 "" H 4800 8650 50  0001 C CNN
-F 3 "" H 4800 8650 50  0001 C CNN
-	1    4800 8650
+P 4400 6900
+F 0 "#PWR0159" H 4400 6650 50  0001 C CNN
+F 1 "GND" H 4400 6750 50  0000 C CNN
+F 2 "" H 4400 6900 50  0001 C CNN
+F 3 "" H 4400 6900 50  0001 C CNN
+	1    4400 6900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 8600 4800 8650
+	4400 6850 4400 6900
 Wire Wire Line
-	5150 8600 5150 8650
+	4750 6850 4750 6900
 Wire Wire Line
-	5500 8600 5500 8650
+	5100 6850 5100 6900
 Wire Wire Line
-	1400 8100 1400 8200
+	1000 6350 1000 6450
 Wire Wire Line
-	1700 8200 1400 8200
-Connection ~ 1400 8200
+	1300 6450 1000 6450
+Connection ~ 1000 6450
 Wire Wire Line
-	1400 8200 1400 8300
+	1000 6450 1000 6550
 Wire Wire Line
-	1700 8300 1400 8300
-Connection ~ 1400 8300
+	1300 6550 1000 6550
+Connection ~ 1000 6550
 Wire Wire Line
-	1400 8300 1400 8600
+	1000 6550 1000 6850
 $Comp
 L Device:R R9
 U 1 1 618F5131
-P 5850 8800
-F 0 "R9" V 5643 8800 50  0000 C CNN
-F 1 "0.47" V 5734 8800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5780 8800 50  0001 C CNN
-F 3 "~" H 5850 8800 50  0001 C CNN
-	1    5850 8800
+P 5450 7050
+F 0 "R9" V 5243 7050 50  0000 C CNN
+F 1 "0.47" V 5334 7050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5380 7050 50  0001 C CNN
+F 3 "~" H 5450 7050 50  0001 C CNN
+	1    5450 7050
 	-1   0    0    1   
 $EndComp
 $Comp
 L dsp-amplifier-x4-rescue:GND #PWR0160
 U 1 1 618F742F
-P 5850 9000
-F 0 "#PWR0160" H 5850 8750 50  0001 C CNN
-F 1 "GND" H 5850 8850 50  0000 C CNN
-F 2 "" H 5850 9000 50  0001 C CNN
-F 3 "" H 5850 9000 50  0001 C CNN
-	1    5850 9000
+P 5450 7250
+F 0 "#PWR0160" H 5450 7000 50  0001 C CNN
+F 1 "GND" H 5450 7100 50  0000 C CNN
+F 2 "" H 5450 7250 50  0001 C CNN
+F 3 "" H 5450 7250 50  0001 C CNN
+	1    5450 7250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 8950 5850 9000
+	5450 7200 5450 7250
 Wire Wire Line
-	5850 8600 5850 8650
+	5450 6850 5450 6900
 Text Label 3400 1250 3    60   ~ 0
 DVDD
 Wire Wire Line
 	3400 1250 3400 1750
-Text Label 4250 8200 2    60   ~ 0
+Text Label 3850 6450 2    60   ~ 0
 DVDD
-Text Label 5850 7950 3    60   ~ 0
+Text Label 5450 6200 3    60   ~ 0
 DVDD
 Wire Wire Line
-	5850 7950 5850 8350
+	5450 6200 5450 6600
 $Comp
 L power:+3.3VA #PWR0162
 U 1 1 61969087
-P 1400 8100
-F 0 "#PWR0162" H 1400 7950 50  0001 C CNN
-F 1 "+3.3VA" H 1415 8273 50  0000 C CNN
-F 2 "" H 1400 8100 50  0001 C CNN
-F 3 "" H 1400 8100 50  0001 C CNN
-	1    1400 8100
+P 1000 6350
+F 0 "#PWR0162" H 1000 6200 50  0001 C CNN
+F 1 "+3.3VA" H 1015 6523 50  0000 C CNN
+F 2 "" H 1000 6350 50  0001 C CNN
+F 3 "" H 1000 6350 50  0001 C CNN
+	1    1000 6350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 8600 2500 8100
+	2100 6850 2100 6350
 Wire Wire Line
-	2050 8600 2500 8600
+	1650 6850 2100 6850
 $Comp
 L power:+3.3VA #PWR0172
 U 1 1 6197E239
@@ -1289,4 +1285,914 @@ Text Label 10850 5050 2    60   ~ 0
 USB_SYSCLK
 Wire Wire Line
 	10850 5050 10250 5050
+$Comp
+L dsp-amplifier-x4-rescue:Capacitor C?
+U 1 1 6068F4FB
+P 2000 8150
+AR Path="/5AF9FF80/6068F4FB" Ref="C?"  Part="1" 
+AR Path="/6068F4FB" Ref="C42"  Part="1" 
+F 0 "C42" H 2050 8250 50  0000 L CNN
+F 1 "10n" H 2050 8100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 1700 8290 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 1700 8290 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 2000 8150 60  0001 C CNN "Mfr.Nr."
+	1    2000 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L dsp-amplifier-x4-rescue:Capacitor C?
+U 1 1 606902E4
+P 2350 8150
+AR Path="/5AF9FF80/606902E4" Ref="C?"  Part="1" 
+AR Path="/606902E4" Ref="C45"  Part="1" 
+F 0 "C45" H 2400 8250 50  0000 L CNN
+F 1 "100n" H 2400 8100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 2050 8290 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 2050 8290 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 2350 8150 60  0001 C CNN "Mfr.Nr."
+	1    2350 8150
+	1    0    0    -1  
+$EndComp
+Text Label 2000 7600 3    60   ~ 0
+DVDD
+Wire Wire Line
+	2350 7900 2350 8000
+Wire Wire Line
+	2000 8000 2000 7900
+Connection ~ 2000 7900
+Wire Wire Line
+	2000 7900 2350 7900
+Wire Wire Line
+	2000 8250 2000 8300
+Wire Wire Line
+	2000 8300 2350 8300
+Wire Wire Line
+	2350 8300 2350 8250
+$Comp
+L dsp-amplifier-x4-rescue:GND #PWR0173
+U 1 1 606AF77C
+P 2000 8350
+F 0 "#PWR0173" H 2000 8100 50  0001 C CNN
+F 1 "GND" H 2000 8200 50  0000 C CNN
+F 2 "" H 2000 8350 50  0001 C CNN
+F 3 "" H 2000 8350 50  0001 C CNN
+	1    2000 8350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 8300 2000 8350
+Wire Wire Line
+	2000 7600 2000 7900
+$Comp
+L dsp-amplifier-x4-rescue:Capacitor C?
+U 1 1 606C65BC
+P 2750 8150
+AR Path="/5AF9FF80/606C65BC" Ref="C?"  Part="1" 
+AR Path="/606C65BC" Ref="C48"  Part="1" 
+F 0 "C48" H 2800 8250 50  0000 L CNN
+F 1 "10n" H 2800 8100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 2450 8290 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 2450 8290 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 2750 8150 60  0001 C CNN "Mfr.Nr."
+	1    2750 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L dsp-amplifier-x4-rescue:Capacitor C?
+U 1 1 606C65C3
+P 3100 8150
+AR Path="/5AF9FF80/606C65C3" Ref="C?"  Part="1" 
+AR Path="/606C65C3" Ref="C51"  Part="1" 
+F 0 "C51" H 3150 8250 50  0000 L CNN
+F 1 "100n" H 3150 8100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 2800 8290 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 2800 8290 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 3100 8150 60  0001 C CNN "Mfr.Nr."
+	1    3100 8150
+	1    0    0    -1  
+$EndComp
+Text Label 2750 7600 3    60   ~ 0
+DVDD
+Wire Wire Line
+	3100 7900 3100 8000
+Wire Wire Line
+	2750 8000 2750 7900
+Connection ~ 2750 7900
+Wire Wire Line
+	2750 7900 3100 7900
+Wire Wire Line
+	2750 8250 2750 8300
+Wire Wire Line
+	2750 8300 3100 8300
+Wire Wire Line
+	3100 8300 3100 8250
+$Comp
+L dsp-amplifier-x4-rescue:GND #PWR0174
+U 1 1 606C65D1
+P 2750 8350
+F 0 "#PWR0174" H 2750 8100 50  0001 C CNN
+F 1 "GND" H 2750 8200 50  0000 C CNN
+F 2 "" H 2750 8350 50  0001 C CNN
+F 3 "" H 2750 8350 50  0001 C CNN
+	1    2750 8350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 8300 2750 8350
+Wire Wire Line
+	2750 7600 2750 7900
+$Comp
+L dsp-amplifier-x4-rescue:Capacitor C?
+U 1 1 606D691F
+P 3500 8150
+AR Path="/5AF9FF80/606D691F" Ref="C?"  Part="1" 
+AR Path="/606D691F" Ref="C55"  Part="1" 
+F 0 "C55" H 3550 8250 50  0000 L CNN
+F 1 "10n" H 3550 8100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 3200 8290 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 3200 8290 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 3500 8150 60  0001 C CNN "Mfr.Nr."
+	1    3500 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L dsp-amplifier-x4-rescue:Capacitor C?
+U 1 1 606D6926
+P 3850 8150
+AR Path="/5AF9FF80/606D6926" Ref="C?"  Part="1" 
+AR Path="/606D6926" Ref="C58"  Part="1" 
+F 0 "C58" H 3900 8250 50  0000 L CNN
+F 1 "100n" H 3900 8100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 3550 8290 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 3550 8290 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 3850 8150 60  0001 C CNN "Mfr.Nr."
+	1    3850 8150
+	1    0    0    -1  
+$EndComp
+Text Label 3500 7600 3    60   ~ 0
+DVDD
+Wire Wire Line
+	3850 7900 3850 8000
+Wire Wire Line
+	3500 8000 3500 7900
+Connection ~ 3500 7900
+Wire Wire Line
+	3500 7900 3850 7900
+Wire Wire Line
+	3500 8250 3500 8300
+Wire Wire Line
+	3500 8300 3850 8300
+Wire Wire Line
+	3850 8300 3850 8250
+$Comp
+L dsp-amplifier-x4-rescue:GND #PWR0175
+U 1 1 606D6934
+P 3500 8350
+F 0 "#PWR0175" H 3500 8100 50  0001 C CNN
+F 1 "GND" H 3500 8200 50  0000 C CNN
+F 2 "" H 3500 8350 50  0001 C CNN
+F 3 "" H 3500 8350 50  0001 C CNN
+	1    3500 8350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 8300 3500 8350
+Wire Wire Line
+	3500 7600 3500 7900
+$Comp
+L dsp-amplifier-x4-rescue:Capacitor C?
+U 1 1 606D693D
+P 4250 8150
+AR Path="/5AF9FF80/606D693D" Ref="C?"  Part="1" 
+AR Path="/606D693D" Ref="C60"  Part="1" 
+F 0 "C60" H 4300 8250 50  0000 L CNN
+F 1 "10n" H 4300 8100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 3950 8290 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 3950 8290 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 4250 8150 60  0001 C CNN "Mfr.Nr."
+	1    4250 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L dsp-amplifier-x4-rescue:Capacitor C?
+U 1 1 606D6944
+P 4600 8150
+AR Path="/5AF9FF80/606D6944" Ref="C?"  Part="1" 
+AR Path="/606D6944" Ref="C62"  Part="1" 
+F 0 "C62" H 4650 8250 50  0000 L CNN
+F 1 "100n" H 4650 8100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 4300 8290 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 4300 8290 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 4600 8150 60  0001 C CNN "Mfr.Nr."
+	1    4600 8150
+	1    0    0    -1  
+$EndComp
+Text Label 4250 7600 3    60   ~ 0
+DVDD
+Wire Wire Line
+	4600 7900 4600 8000
+Wire Wire Line
+	4250 8000 4250 7900
+Connection ~ 4250 7900
+Wire Wire Line
+	4250 7900 4600 7900
+Wire Wire Line
+	4250 8250 4250 8300
+Wire Wire Line
+	4250 8300 4600 8300
+Wire Wire Line
+	4600 8300 4600 8250
+$Comp
+L dsp-amplifier-x4-rescue:GND #PWR0176
+U 1 1 606D6952
+P 4250 8350
+F 0 "#PWR0176" H 4250 8100 50  0001 C CNN
+F 1 "GND" H 4250 8200 50  0000 C CNN
+F 2 "" H 4250 8350 50  0001 C CNN
+F 3 "" H 4250 8350 50  0001 C CNN
+	1    4250 8350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 8300 4250 8350
+Wire Wire Line
+	4250 7600 4250 7900
+$Comp
+L dsp-amplifier-x4-rescue:Capacitor C?
+U 1 1 606F4250
+P 2000 9250
+AR Path="/5AF9FF80/606F4250" Ref="C?"  Part="1" 
+AR Path="/606F4250" Ref="C43"  Part="1" 
+F 0 "C43" H 2050 9350 50  0000 L CNN
+F 1 "10n" H 2050 9200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 1700 9390 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 1700 9390 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 2000 9250 60  0001 C CNN "Mfr.Nr."
+	1    2000 9250
+	1    0    0    -1  
+$EndComp
+$Comp
+L dsp-amplifier-x4-rescue:Capacitor C?
+U 1 1 606F4257
+P 2350 9250
+AR Path="/5AF9FF80/606F4257" Ref="C?"  Part="1" 
+AR Path="/606F4257" Ref="C46"  Part="1" 
+F 0 "C46" H 2400 9350 50  0000 L CNN
+F 1 "100n" H 2400 9200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 2050 9390 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 2050 9390 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 2350 9250 60  0001 C CNN "Mfr.Nr."
+	1    2350 9250
+	1    0    0    -1  
+$EndComp
+Text Label 2000 8700 3    60   ~ 0
+IOVDD
+Wire Wire Line
+	2350 9000 2350 9100
+Wire Wire Line
+	2000 9100 2000 9000
+Connection ~ 2000 9000
+Wire Wire Line
+	2000 9000 2350 9000
+Wire Wire Line
+	2000 9350 2000 9400
+Wire Wire Line
+	2000 9400 2350 9400
+Wire Wire Line
+	2350 9400 2350 9350
+$Comp
+L dsp-amplifier-x4-rescue:GND #PWR0177
+U 1 1 606F4265
+P 2000 9450
+F 0 "#PWR0177" H 2000 9200 50  0001 C CNN
+F 1 "GND" H 2000 9300 50  0000 C CNN
+F 2 "" H 2000 9450 50  0001 C CNN
+F 3 "" H 2000 9450 50  0001 C CNN
+	1    2000 9450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 9400 2000 9450
+Wire Wire Line
+	2000 8700 2000 9000
+$Comp
+L dsp-amplifier-x4-rescue:Capacitor C?
+U 1 1 606F426E
+P 2750 9250
+AR Path="/5AF9FF80/606F426E" Ref="C?"  Part="1" 
+AR Path="/606F426E" Ref="C49"  Part="1" 
+F 0 "C49" H 2800 9350 50  0000 L CNN
+F 1 "10n" H 2800 9200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 2450 9390 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 2450 9390 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 2750 9250 60  0001 C CNN "Mfr.Nr."
+	1    2750 9250
+	1    0    0    -1  
+$EndComp
+$Comp
+L dsp-amplifier-x4-rescue:Capacitor C?
+U 1 1 606F4275
+P 3100 9250
+AR Path="/5AF9FF80/606F4275" Ref="C?"  Part="1" 
+AR Path="/606F4275" Ref="C52"  Part="1" 
+F 0 "C52" H 3150 9350 50  0000 L CNN
+F 1 "100n" H 3150 9200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 2800 9390 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 2800 9390 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 3100 9250 60  0001 C CNN "Mfr.Nr."
+	1    3100 9250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 9000 3100 9100
+Wire Wire Line
+	2750 9100 2750 9000
+Connection ~ 2750 9000
+Wire Wire Line
+	2750 9000 3100 9000
+Wire Wire Line
+	2750 9350 2750 9400
+Wire Wire Line
+	2750 9400 3100 9400
+Wire Wire Line
+	3100 9400 3100 9350
+$Comp
+L dsp-amplifier-x4-rescue:GND #PWR0178
+U 1 1 606F4283
+P 2750 9450
+F 0 "#PWR0178" H 2750 9200 50  0001 C CNN
+F 1 "GND" H 2750 9300 50  0000 C CNN
+F 2 "" H 2750 9450 50  0001 C CNN
+F 3 "" H 2750 9450 50  0001 C CNN
+	1    2750 9450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 9400 2750 9450
+Wire Wire Line
+	2750 8700 2750 9000
+$Comp
+L dsp-amplifier-x4-rescue:Capacitor C?
+U 1 1 606F428C
+P 3500 9250
+AR Path="/5AF9FF80/606F428C" Ref="C?"  Part="1" 
+AR Path="/606F428C" Ref="C57"  Part="1" 
+F 0 "C57" H 3550 9350 50  0000 L CNN
+F 1 "10n" H 3550 9200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 3200 9390 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 3200 9390 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 3500 9250 60  0001 C CNN "Mfr.Nr."
+	1    3500 9250
+	1    0    0    -1  
+$EndComp
+$Comp
+L dsp-amplifier-x4-rescue:Capacitor C?
+U 1 1 606F4293
+P 3850 9250
+AR Path="/5AF9FF80/606F4293" Ref="C?"  Part="1" 
+AR Path="/606F4293" Ref="C59"  Part="1" 
+F 0 "C59" H 3900 9350 50  0000 L CNN
+F 1 "100n" H 3900 9200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 3550 9390 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 3550 9390 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 3850 9250 60  0001 C CNN "Mfr.Nr."
+	1    3850 9250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 9000 3850 9100
+Wire Wire Line
+	3500 9100 3500 9000
+Connection ~ 3500 9000
+Wire Wire Line
+	3500 9000 3850 9000
+Wire Wire Line
+	3500 9350 3500 9400
+Wire Wire Line
+	3500 9400 3850 9400
+Wire Wire Line
+	3850 9400 3850 9350
+$Comp
+L dsp-amplifier-x4-rescue:GND #PWR0179
+U 1 1 606F42A1
+P 3500 9450
+F 0 "#PWR0179" H 3500 9200 50  0001 C CNN
+F 1 "GND" H 3500 9300 50  0000 C CNN
+F 2 "" H 3500 9450 50  0001 C CNN
+F 3 "" H 3500 9450 50  0001 C CNN
+	1    3500 9450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 9400 3500 9450
+Wire Wire Line
+	3500 8700 3500 9000
+$Comp
+L dsp-amplifier-x4-rescue:Capacitor C?
+U 1 1 606F42AA
+P 4250 9250
+AR Path="/5AF9FF80/606F42AA" Ref="C?"  Part="1" 
+AR Path="/606F42AA" Ref="C61"  Part="1" 
+F 0 "C61" H 4300 9350 50  0000 L CNN
+F 1 "10n" H 4300 9200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 3950 9390 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 3950 9390 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 4250 9250 60  0001 C CNN "Mfr.Nr."
+	1    4250 9250
+	1    0    0    -1  
+$EndComp
+$Comp
+L dsp-amplifier-x4-rescue:Capacitor C?
+U 1 1 606F42B1
+P 4600 9250
+AR Path="/5AF9FF80/606F42B1" Ref="C?"  Part="1" 
+AR Path="/606F42B1" Ref="C63"  Part="1" 
+F 0 "C63" H 4650 9350 50  0000 L CNN
+F 1 "100n" H 4650 9200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 4300 9390 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 4300 9390 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 4600 9250 60  0001 C CNN "Mfr.Nr."
+	1    4600 9250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 9000 4600 9100
+Wire Wire Line
+	4250 9100 4250 9000
+Connection ~ 4250 9000
+Wire Wire Line
+	4250 9000 4600 9000
+Wire Wire Line
+	4250 9350 4250 9400
+Wire Wire Line
+	4250 9400 4600 9400
+Wire Wire Line
+	4600 9400 4600 9350
+$Comp
+L dsp-amplifier-x4-rescue:GND #PWR0180
+U 1 1 606F42BF
+P 4250 9450
+F 0 "#PWR0180" H 4250 9200 50  0001 C CNN
+F 1 "GND" H 4250 9300 50  0000 C CNN
+F 2 "" H 4250 9450 50  0001 C CNN
+F 3 "" H 4250 9450 50  0001 C CNN
+	1    4250 9450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 9400 4250 9450
+Wire Wire Line
+	4250 8700 4250 9000
+Text Label 2750 8700 3    60   ~ 0
+IOVDD
+Text Label 3500 8700 3    60   ~ 0
+IOVDD
+Text Label 4250 8700 3    60   ~ 0
+IOVDD
+$Comp
+L dsp-amplifier-x4-rescue:Capacitor C?
+U 1 1 6070DD24
+P 2000 10350
+AR Path="/5AF9FF80/6070DD24" Ref="C?"  Part="1" 
+AR Path="/6070DD24" Ref="C44"  Part="1" 
+F 0 "C44" H 2050 10450 50  0000 L CNN
+F 1 "10n" H 2050 10300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 1700 10490 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 1700 10490 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 2000 10350 60  0001 C CNN "Mfr.Nr."
+	1    2000 10350
+	1    0    0    -1  
+$EndComp
+$Comp
+L dsp-amplifier-x4-rescue:Capacitor C?
+U 1 1 6070DD2B
+P 2350 10350
+AR Path="/5AF9FF80/6070DD2B" Ref="C?"  Part="1" 
+AR Path="/6070DD2B" Ref="C47"  Part="1" 
+F 0 "C47" H 2400 10450 50  0000 L CNN
+F 1 "100n" H 2400 10300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 2050 10490 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 2050 10490 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 2350 10350 60  0001 C CNN "Mfr.Nr."
+	1    2350 10350
+	1    0    0    -1  
+$EndComp
+Text Label 2000 9800 3    60   ~ 0
+PVDD
+Wire Wire Line
+	2350 10100 2350 10200
+Wire Wire Line
+	2000 10200 2000 10100
+Connection ~ 2000 10100
+Wire Wire Line
+	2000 10100 2350 10100
+Wire Wire Line
+	2000 10450 2000 10500
+Wire Wire Line
+	2000 10500 2350 10500
+Wire Wire Line
+	2350 10500 2350 10450
+$Comp
+L dsp-amplifier-x4-rescue:GND #PWR0181
+U 1 1 6070DD39
+P 2000 10550
+F 0 "#PWR0181" H 2000 10300 50  0001 C CNN
+F 1 "GND" H 2000 10400 50  0000 C CNN
+F 2 "" H 2000 10550 50  0001 C CNN
+F 3 "" H 2000 10550 50  0001 C CNN
+	1    2000 10550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 10500 2000 10550
+Wire Wire Line
+	2000 9800 2000 10100
+$Comp
+L dsp-amplifier-x4-rescue:Capacitor C?
+U 1 1 6070DD42
+P 2750 10350
+AR Path="/5AF9FF80/6070DD42" Ref="C?"  Part="1" 
+AR Path="/6070DD42" Ref="C50"  Part="1" 
+F 0 "C50" H 2800 10450 50  0000 L CNN
+F 1 "10n" H 2800 10300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 2450 10490 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 2450 10490 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 2750 10350 60  0001 C CNN "Mfr.Nr."
+	1    2750 10350
+	1    0    0    -1  
+$EndComp
+$Comp
+L dsp-amplifier-x4-rescue:Capacitor C?
+U 1 1 6070DD49
+P 3100 10350
+AR Path="/5AF9FF80/6070DD49" Ref="C?"  Part="1" 
+AR Path="/6070DD49" Ref="C53"  Part="1" 
+F 0 "C53" H 3150 10450 50  0000 L CNN
+F 1 "100n" H 3150 10300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 2800 10490 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 2800 10490 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 3100 10350 60  0001 C CNN "Mfr.Nr."
+	1    3100 10350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 10100 3100 10200
+Wire Wire Line
+	2750 10200 2750 10100
+Connection ~ 2750 10100
+Wire Wire Line
+	2750 10100 3100 10100
+Wire Wire Line
+	2750 10450 2750 10500
+Wire Wire Line
+	2750 10500 3100 10500
+Wire Wire Line
+	3100 10500 3100 10450
+$Comp
+L dsp-amplifier-x4-rescue:GND #PWR0182
+U 1 1 6070DD56
+P 2750 10550
+F 0 "#PWR0182" H 2750 10300 50  0001 C CNN
+F 1 "GND" H 2750 10400 50  0000 C CNN
+F 2 "" H 2750 10550 50  0001 C CNN
+F 3 "" H 2750 10550 50  0001 C CNN
+	1    2750 10550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 10500 2750 10550
+Wire Wire Line
+	2750 9800 2750 10100
+Text Label 2750 9800 3    60   ~ 0
+AVDD
+NoConn ~ 4200 2350
+Text Label 4700 1950 2    60   ~ 0
+VDRIVE
+Wire Wire Line
+	4700 1950 4200 1950
+Wire Wire Line
+	4700 2150 4200 2150
+Text Label 2650 6700 0    60   ~ 0
+VDRIVE
+Wire Wire Line
+	2650 6700 3000 6700
+Connection ~ 3000 6700
+NoConn ~ 4200 2550
+NoConn ~ 4200 2650
+NoConn ~ 4200 2950
+$Comp
+L Device:R_POT RV1
+U 1 1 607C4CE2
+P 5650 2100
+F 0 "RV1" H 5581 2146 50  0000 R CNN
+F 1 "R_POT" H 5581 2055 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_248GJ-249GJ_Single_Vertical" H 5650 2100 50  0001 C CNN
+F 3 "~" H 5650 2100 50  0001 C CNN
+	1    5650 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 607C7CF2
+P 6650 2100
+F 0 "RV2" H 6581 2146 50  0000 R CNN
+F 1 "R_POT" H 6581 2055 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_248GJ-249GJ_Single_Vertical" H 6650 2100 50  0001 C CNN
+F 3 "~" H 6650 2100 50  0001 C CNN
+	1    6650 2100
+	1    0    0    -1  
+$EndComp
+Text Label 5650 1650 3    60   ~ 0
+AVDD
+Wire Wire Line
+	5650 1650 5650 1900
+Wire Wire Line
+	5650 1900 6650 1900
+Wire Wire Line
+	6650 1900 6650 1950
+Connection ~ 5650 1900
+Wire Wire Line
+	5650 1900 5650 1950
+$Comp
+L dsp-amplifier-x4-rescue:GND #PWR0183
+U 1 1 607F06EF
+P 5650 2300
+F 0 "#PWR0183" H 5650 2050 50  0001 C CNN
+F 1 "GND" H 5650 2150 50  0000 C CNN
+F 2 "" H 5650 2300 50  0001 C CNN
+F 3 "" H 5650 2300 50  0001 C CNN
+	1    5650 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2250 5650 2300
+$Comp
+L dsp-amplifier-x4-rescue:GND #PWR0184
+U 1 1 608051CA
+P 6650 2300
+F 0 "#PWR0184" H 6650 2050 50  0001 C CNN
+F 1 "GND" H 6650 2150 50  0000 C CNN
+F 2 "" H 6650 2300 50  0001 C CNN
+F 3 "" H 6650 2300 50  0001 C CNN
+	1    6650 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2300 6650 2250
+Text Label 6150 2100 2    60   ~ 0
+VPOT0
+Wire Wire Line
+	5800 2100 6150 2100
+Text Label 7150 2100 2    60   ~ 0
+VPOT1
+Wire Wire Line
+	6800 2100 7150 2100
+Text Label 2050 4750 0    60   ~ 0
+VPOT0
+Wire Wire Line
+	2400 4750 2050 4750
+Text Label 2050 4850 0    60   ~ 0
+VPOT1
+Wire Wire Line
+	2400 4850 2050 4850
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 609A22DB
+P 14500 2800
+F 0 "J4" H 14580 2792 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 14580 2701 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 14500 2800 50  0001 C CNN
+F 3 "~" H 14500 2800 50  0001 C CNN
+	1    14500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J5
+U 1 1 609A2D67
+P 14500 3150
+F 0 "J5" H 14580 3142 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 14580 3051 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 14500 3150 50  0001 C CNN
+F 3 "~" H 14500 3150 50  0001 C CNN
+	1    14500 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14300 3150 14250 3150
+Wire Wire Line
+	14250 3250 14300 3250
+Wire Wire Line
+	14300 2900 14250 2900
+Wire Wire Line
+	14250 2800 14300 2800
+Text Label 12000 2750 0    60   ~ 0
+AMP1_NSPK_SD
+Text Label 12000 2650 0    60   ~ 0
+AMP1_SPK_SLEEP
+Wire Wire Line
+	12000 2650 12850 2650
+Wire Wire Line
+	12850 2750 12000 2750
+Text Label 5100 4450 2    60   ~ 0
+AMP1_NSPK_SD
+Text Label 5100 4550 2    60   ~ 0
+AMP1_SPK_SLEEP
+Wire Wire Line
+	4200 4550 5100 4550
+Wire Wire Line
+	5100 4450 4200 4450
+Text Label 5100 5250 2    60   ~ 0
+AMP2_NSPK_SD
+Text Label 5100 5350 2    60   ~ 0
+AMP2_SPK_SLEEP
+Wire Wire Line
+	4200 5350 5100 5350
+Wire Wire Line
+	5100 5250 4200 5250
+NoConn ~ 4200 2850
+Text Label 5200 3250 2    60   ~ 0
+EXT_O_LRCLK
+Wire Wire Line
+	5200 3250 4550 3250
+Text Label 5200 3350 2    60   ~ 0
+EXT_O_BCLK
+Wire Wire Line
+	5200 3350 4550 3350
+Text Label 5200 3450 2    60   ~ 0
+EXT_O_SDIN
+Wire Wire Line
+	5200 3450 4550 3450
+$Comp
+L Device:R R38
+U 1 1 60C2172F
+P 4400 3250
+F 0 "R38" V 4193 3250 50  0001 C CNN
+F 1 "33" V 4284 3250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4330 3250 50  0001 C CNN
+F 3 "~" H 4400 3250 50  0001 C CNN
+	1    4400 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R39
+U 1 1 60C21735
+P 4400 3350
+F 0 "R39" V 4193 3350 50  0001 C CNN
+F 1 "33" V 4284 3350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4330 3350 50  0001 C CNN
+F 3 "~" H 4400 3350 50  0001 C CNN
+	1    4400 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R40
+U 1 1 60C2173B
+P 4400 3450
+F 0 "R40" V 4193 3450 50  0001 C CNN
+F 1 "33" V 4284 3450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4330 3450 50  0001 C CNN
+F 3 "~" H 4400 3450 50  0001 C CNN
+	1    4400 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 3250 4200 3250
+Wire Wire Line
+	4200 3350 4250 3350
+Wire Wire Line
+	4250 3450 4200 3450
+Text Label 1800 3750 0    60   ~ 0
+EXT_O_LRCLK
+Text Label 1800 3650 0    60   ~ 0
+EXT_I_BCLK
+Text Label 1800 3850 0    60   ~ 0
+EXT_I_SDATA
+Wire Wire Line
+	2400 3850 1800 3850
+Wire Wire Line
+	2400 3750 1800 3750
+Wire Wire Line
+	1800 3650 2400 3650
+Text Label 12200 3500 0    60   ~ 0
+GAIN0
+Text Label 12200 3600 0    60   ~ 0
+GAIN1
+Wire Wire Line
+	12850 3500 12200 3500
+Wire Wire Line
+	12200 3600 12850 3600
+Text Label 13650 1350 2    60   ~ 0
+GAIN1
+Wire Wire Line
+	13000 1350 13650 1350
+$Comp
+L power:+3.3V #PWR0186
+U 1 1 60DB0BF6
+P 13000 900
+F 0 "#PWR0186" H 13000 750 50  0001 C CNN
+F 1 "+3.3V" H 13015 1073 50  0000 C CNN
+F 2 "" H 13000 900 50  0001 C CNN
+F 3 "" H 13000 900 50  0001 C CNN
+	1    13000 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L dsp-amplifier-x4-rescue:GND #PWR0187
+U 1 1 60DE0F78
+P 13000 1750
+F 0 "#PWR0187" H 13000 1500 50  0001 C CNN
+F 1 "GND" H 13000 1600 50  0000 C CNN
+F 2 "" H 13000 1750 50  0001 C CNN
+F 3 "" H 13000 1750 50  0001 C CNN
+	1    13000 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13000 1700 13000 1750
+$Comp
+L Device:R R41
+U 1 1 60E78271
+P 13000 1150
+F 0 "R41" V 12793 1150 50  0000 C CNN
+F 1 "4.3k" V 12884 1150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 12930 1150 50  0001 C CNN
+F 3 "~" H 13000 1150 50  0001 C CNN
+	1    13000 1150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13000 1300 13000 1350
+Wire Wire Line
+	13000 900  13000 1000
+$Comp
+L Device:R R42
+U 1 1 60F40166
+P 13000 1550
+F 0 "R42" V 12793 1550 50  0000 C CNN
+F 1 "DNP" V 12884 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 12930 1550 50  0001 C CNN
+F 3 "~" H 13000 1550 50  0001 C CNN
+	1    13000 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13000 1400 13000 1350
+Connection ~ 13000 1350
+Text Label 14500 1350 2    60   ~ 0
+GAIN0
+Wire Wire Line
+	13850 1350 14500 1350
+$Comp
+L power:+3.3V #PWR0188
+U 1 1 60FBEEDA
+P 13850 900
+F 0 "#PWR0188" H 13850 750 50  0001 C CNN
+F 1 "+3.3V" H 13865 1073 50  0000 C CNN
+F 2 "" H 13850 900 50  0001 C CNN
+F 3 "" H 13850 900 50  0001 C CNN
+	1    13850 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L dsp-amplifier-x4-rescue:GND #PWR0189
+U 1 1 60FBEEE0
+P 13850 1750
+F 0 "#PWR0189" H 13850 1500 50  0001 C CNN
+F 1 "GND" H 13850 1600 50  0000 C CNN
+F 2 "" H 13850 1750 50  0001 C CNN
+F 3 "" H 13850 1750 50  0001 C CNN
+	1    13850 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13850 1700 13850 1750
+$Comp
+L Device:R R44
+U 1 1 60FBEEE7
+P 13850 1550
+F 0 "R44" V 13643 1550 50  0000 C CNN
+F 1 "4.3k" V 13734 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 13780 1550 50  0001 C CNN
+F 3 "~" H 13850 1550 50  0001 C CNN
+	1    13850 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13850 1300 13850 1350
+Wire Wire Line
+	13850 900  13850 1000
+$Comp
+L Device:R R43
+U 1 1 60FBEEEF
+P 13850 1150
+F 0 "R43" V 13643 1150 50  0000 C CNN
+F 1 "DNP" V 13734 1150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 13780 1150 50  0001 C CNN
+F 3 "~" H 13850 1150 50  0001 C CNN
+	1    13850 1150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13850 1400 13850 1350
+Connection ~ 13850 1350
 $EndSCHEMATC
