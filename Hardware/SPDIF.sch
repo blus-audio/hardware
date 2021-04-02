@@ -1,0 +1,196 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 7
+Title "SPDIF"
+Date "2021-03-30"
+Rev "V0.1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L dsp-amplifier-x4-rescue:C C54
+U 1 1 5B17A13D
+P 5700 3100
+F 0 "C54" H 5725 3200 50  0000 L CNN
+F 1 "100n" H 5725 3000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5738 2950 30  0001 C CNN
+F 3 "" H 5700 3100 60  0000 C CNN
+	1    5700 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dsp-amplifier-x4-rescue:C C56
+U 1 1 5B17A329
+P 6300 3100
+F 0 "C56" H 6325 3200 50  0000 L CNN
+F 1 "100n" H 6325 3000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6338 2950 30  0001 C CNN
+F 3 "" H 6300 3100 60  0000 C CNN
+	1    6300 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dsp-amplifier-x4-rescue:GND #PWR099
+U 1 1 5B17B399
+P 6000 3500
+F 0 "#PWR099" H 6000 3250 50  0001 C CNN
+F 1 "GND" H 6000 3350 50  0000 C CNN
+F 2 "" H 6000 3500 60  0000 C CNN
+F 3 "" H 6000 3500 60  0000 C CNN
+	1    6000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L dsp-amplifier-x4-rescue:GND #PWR0100
+U 1 1 5B17BE5B
+P 4850 3750
+F 0 "#PWR0100" H 4850 3500 50  0001 C CNN
+F 1 "GND" H 4850 3600 50  0000 C CNN
+F 2 "" H 4850 3750 60  0000 C CNN
+F 3 "" H 4850 3750 60  0000 C CNN
+	1    4850 3750
+	0    1    1    0   
+$EndComp
+NoConn ~ -450 5300
+$Comp
+L dsp-amplifier-x4-rescue:FCR684205R P12
+U 1 1 5B20525A
+P 6700 3300
+F 0 "P12" H 6700 2700 60  0000 C CNN
+F 1 "FCR684205R" H 6650 3300 60  0000 C CNN
+F 2 "FCR684205:FC684205_R_T" H 6650 3300 60  0001 C CNN
+F 3 "" H 6650 3300 60  0001 C CNN
+	1    6700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L dsp-amplifier-x4-rescue:FCR684205T P11
+U 1 1 5B2052D5
+P 5200 3300
+F 0 "P11" H 5250 2750 60  0000 C CNN
+F 1 "FCR684205T" H 5250 3300 60  0000 C CNN
+F 2 "FCR684205:FC684205_R_T" H 5250 3300 60  0001 C CNN
+F 3 "" H 5250 3300 60  0001 C CNN
+	1    5200 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 6000 3400
+Wire Wire Line
+	6000 3500 6000 3400
+Wire Wire Line
+	4850 3750 4900 3750
+Wire Wire Line
+	6300 3400 6300 3250
+Wire Wire Line
+	5700 3400 6000 3400
+Wire Wire Line
+	5700 3250 5700 3400
+Wire Wire Line
+	7200 3450 7000 3450
+Wire Wire Line
+	4550 3450 4900 3450
+Wire Wire Line
+	6000 3400 6300 3400
+Text HLabel 4750 3600 0    60   Input ~ 0
+SPDIF_OUT
+Wire Wire Line
+	4900 3600 4750 3600
+Text HLabel 7500 3600 2    60   Output ~ 0
+SPDIF_IN
+$Comp
+L dsp-amplifier-x4-rescue:GND #PWR0161
+U 1 1 612B53A9
+P 7050 3750
+F 0 "#PWR0161" H 7050 3500 50  0001 C CNN
+F 1 "GND" H 7050 3600 50  0000 C CNN
+F 2 "" H 7050 3750 60  0000 C CNN
+F 3 "" H 7050 3750 60  0000 C CNN
+	1    7050 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 3750 7050 3750
+$Comp
+L Device:R R?
+U 1 1 612B7DD6
+P 7300 3600
+AR Path="/612B7DD6" Ref="R?"  Part="1" 
+AR Path="/5AFACEFB/612B7DD6" Ref="R8"  Part="1" 
+F 0 "R8" V 7093 3600 50  0000 C CNN
+F 1 "33" V 7184 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7230 3600 50  0001 C CNN
+F 3 "~" H 7300 3600 50  0001 C CNN
+	1    7300 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7500 3600 7450 3600
+Wire Wire Line
+	7150 3600 7000 3600
+Wire Wire Line
+	4000 2450 4000 2900
+Connection ~ 4000 2450
+Wire Wire Line
+	4150 2450 4000 2450
+Wire Wire Line
+	4000 1950 4000 2450
+$Comp
+L Device:Ferrite_Bead FB4
+U 1 1 6198169A
+P 4300 2450
+F 0 "FB4" V 4026 2450 50  0000 C CNN
+F 1 "600/100M" V 4117 2450 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder" V 4230 2450 50  0001 C CNN
+F 3 "~" H 4300 2450 50  0001 C CNN
+	1    4300 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 2900 4000 2900
+$Comp
+L Device:Ferrite_Bead FB2
+U 1 1 612B8CAF
+P 4300 2900
+F 0 "FB2" V 4026 2900 50  0000 C CNN
+F 1 "600/100M" V 4117 2900 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder" V 4230 2900 50  0001 C CNN
+F 3 "~" H 4300 2900 50  0001 C CNN
+	1    4300 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 2900 4550 2900
+$Comp
+L dsp-amplifier-x4-rescue:+3V3 #PWR0102
+U 1 1 5B17C651
+P 4000 1950
+F 0 "#PWR0102" H 4000 1800 50  0001 C CNN
+F 1 "+3V3" H 4000 2090 50  0000 C CNN
+F 2 "" H 4000 1950 60  0000 C CNN
+F 3 "" H 4000 1950 60  0000 C CNN
+	1    4000 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2900 4550 3450
+Wire Wire Line
+	4550 2900 5700 2900
+Wire Wire Line
+	5700 2900 5700 2950
+Connection ~ 4550 2900
+Wire Wire Line
+	4450 2450 6300 2450
+Wire Wire Line
+	6300 2450 6300 2950
+Wire Wire Line
+	6300 2450 7200 2450
+Wire Wire Line
+	7200 2450 7200 3450
+Connection ~ 6300 2450
+$EndSCHEMATC
