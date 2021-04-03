@@ -656,8 +656,6 @@ Wire Wire Line
 Text Label 8000 7550 0    60   ~ 0
 PI_SDATA_I
 Wire Wire Line
-	8000 7550 8700 7550
-Wire Wire Line
 	9600 1000 9350 1000
 Wire Wire Line
 	9350 1000 9350 950 
@@ -675,9 +673,9 @@ Wire Wire Line
 	11550 2050 10850 2050
 Text Label 11550 2050 2    60   ~ 0
 AMP2_CLOCK
-Text Label 11550 1850 2    60   ~ 0
-AMP1_CLOCK
 Text Label 11550 2250 2    60   ~ 0
+AMP1_CLOCK
+Text Label 11550 1850 2    60   ~ 0
 DSP_CLOCK
 Wire Wire Line
 	12400 3300 13050 3300
@@ -783,17 +781,6 @@ F 3 "~" H 8850 7450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R21
-U 1 1 60BB796A
-P 8850 7550
-F 0 "R21" V 8643 7550 50  0001 C CNN
-F 1 "33" V 8734 7550 50  0001 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8780 7550 50  0001 C CNN
-F 3 "~" H 8850 7550 50  0001 C CNN
-	1    8850 7550
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R R22
 U 1 1 60BB7970
 P 8850 7650
@@ -806,8 +793,6 @@ F 3 "~" H 8850 7650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9000 7450 9050 7450
-Wire Wire Line
-	9050 7550 9000 7550
 Wire Wire Line
 	9000 7650 9050 7650
 $Comp
@@ -2416,4 +2401,6 @@ Wire Wire Line
 	10550 2250 10500 2250
 Wire Wire Line
 	10550 2050 10500 2050
+Wire Wire Line
+	8000 7550 9050 7550
 $EndSCHEMATC

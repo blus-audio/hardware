@@ -511,8 +511,6 @@ Text HLabel 4750 3850 2    60   Output ~ 0
 USB_LRCLK
 Text HLabel 4750 3950 2    60   Output ~ 0
 USB_BCLK
-Text HLabel 4750 4050 2    60   Output ~ 0
-USB_SYSCLK
 Wire Wire Line
 	4750 3850 4700 3850
 Wire Wire Line
@@ -567,4 +565,6 @@ Wire Wire Line
 	2600 1550 2500 1650
 Wire Wire Line
 	2500 1550 2600 1650
+Text HLabel 4750 4050 2    60   Output ~ 0
+USB_SYSCLK
 $EndSCHEMATC
