@@ -1,6 +1,6 @@
 (sym_lib_table
-  (lib (name dsp-amplifier-x4-rescue)(type Legacy)(uri ${KIPRJMOD}/dsp-amplifier-x4-rescue.lib)(options "")(descr ""))
   (lib (name tas5760)(type Legacy)(uri ${KIPRJMOD}/Library_AMPx2/tas5760mdcar.lib)(options "")(descr ""))
   (lib (name buffers)(type Legacy)(uri ${KIPRJMOD}/Library_buffers/buffers.lib)(options "")(descr ""))
   (lib (name dac)(type Legacy)(uri ${KIPRJMOD}/Library_dac/dac.lib)(options "")(descr ""))
+  (lib (name transformer_audio)(type Legacy)(uri ${KIPRJMOD}/Library_transformer_audio/transformer_audio.lib)(options "")(descr ""))
 )
