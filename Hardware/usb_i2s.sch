@@ -313,7 +313,6 @@ Wire Wire Line
 	1950 4050 1950 4000
 Wire Wire Line
 	1950 4000 2350 4000
-NoConn ~ 4350 4150
 NoConn ~ 3300 4150
 NoConn ~ 3300 4250
 NoConn ~ 3300 4350
@@ -351,21 +350,6 @@ F 3 "~" H 4550 3950 50  0001 C CNN
 	1    4550 3950
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 61ACFE1C
-P 4550 4050
-AR Path="/61ACFE1C" Ref="R?"  Part="1" 
-AR Path="/61AABE2E/61ACFE1C" Ref="R43"  Part="1" 
-F 0 "R43" V 4343 4050 50  0001 C CNN
-F 1 "33" V 4434 4050 50  0001 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4480 4050 50  0001 C CNN
-F 3 "~" H 4550 4050 50  0001 C CNN
-	1    4550 4050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4400 4050 4350 4050
 Wire Wire Line
 	4350 3950 4400 3950
 Wire Wire Line
@@ -515,8 +499,6 @@ Wire Wire Line
 	4750 3850 4700 3850
 Wire Wire Line
 	4700 3950 4750 3950
-Wire Wire Line
-	4750 4050 4700 4050
 Text HLabel 4750 4350 2    60   Output ~ 0
 USB_SDATA
 $Comp
@@ -565,6 +547,6 @@ Wire Wire Line
 	2600 1550 2500 1650
 Wire Wire Line
 	2500 1550 2600 1650
-Text HLabel 4750 4050 2    60   Output ~ 0
-USB_SYSCLK
+NoConn ~ 4350 4050
+NoConn ~ 4350 4150
 $EndSCHEMATC

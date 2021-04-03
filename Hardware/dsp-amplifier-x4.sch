@@ -171,15 +171,13 @@ U 1 1 60829D91
 P 9850 7650
 F 0 "J3" H 9850 9131 50  0000 C CNN
 F 1 "Raspberry_Pi_2_3" H 9850 9040 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 9850 7650 50  0001 C CNN
+F 2 "rpi_socket:PinSocket_2x20_P2.54mm_Vertical" H 9850 7650 50  0001 C CNN
 F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 9850 7650 50  0001 C CNN
 	1    9850 7650
 	1    0    0    -1  
 $EndComp
 Text Label 8000 7450 0    60   ~ 0
 PI_LRCLK
-Text Label 8350 7250 0    60   ~ 0
-PI_BCLK
 Text Label 8000 7650 0    60   ~ 0
 PI_SDATA_O
 $Comp
@@ -232,24 +230,10 @@ Wire Wire Line
 Wire Wire Line
 	10150 9000 10150 8950
 Connection ~ 10050 9000
-$Comp
-L power:+5VD #PWR033
-U 1 1 6086659C
-P 9650 6050
-F 0 "#PWR033" H 9650 5900 50  0001 C CNN
-F 1 "+5VD" H 9665 6223 50  0000 C CNN
-F 2 "" H 9650 6050 50  0001 C CNN
-F 3 "" H 9650 6050 50  0001 C CNN
-	1    9650 6050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9650 6050 9650 6300
 Wire Wire Line
 	9750 6350 9750 6300
 Wire Wire Line
 	9750 6300 9650 6300
-Connection ~ 9650 6300
 Wire Wire Line
 	9650 6300 9650 6350
 Text Label 10850 7150 0    60   ~ 0
@@ -278,8 +262,6 @@ Wire Wire Line
 	11250 8150 10650 8150
 Text Label 8350 8350 0    60   ~ 0
 PI_MUTE
-Text Label 8350 7150 0    60   ~ 0
-DSP_NRESET
 Text Label 8350 8150 0    60   ~ 0
 DSP_SELFBOOT
 $Sheet
@@ -625,10 +607,6 @@ Wire Wire Line
 	1750 4450 2600 4450
 Wire Wire Line
 	1400 4550 2600 4550
-Wire Wire Line
-	8350 7150 9050 7150
-Wire Wire Line
-	8350 7250 9050 7250
 Wire Wire Line
 	8000 7450 8700 7450
 Wire Wire Line
@@ -2403,4 +2381,26 @@ Wire Wire Line
 	10550 2050 10500 2050
 Wire Wire Line
 	8000 7550 9050 7550
+Wire Wire Line
+	8350 7250 9050 7250
+Wire Wire Line
+	8350 7150 9050 7150
+Text Label 8350 7150 0    60   ~ 0
+DSP_NRESET
+Text Label 8350 7250 0    60   ~ 0
+PI_BCLK
+Connection ~ 9650 6300
+$Comp
+L power:+5VD #PWR033
+U 1 1 6086659C
+P 9650 6050
+F 0 "#PWR033" H 9650 5900 50  0001 C CNN
+F 1 "+5VD" H 9665 6223 50  0000 C CNN
+F 2 "" H 9650 6050 50  0001 C CNN
+F 3 "" H 9650 6050 50  0001 C CNN
+	1    9650 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 6050 9650 6300
 $EndSCHEMATC
