@@ -634,8 +634,6 @@ Wire Wire Line
 Text Label 8000 7550 0    60   ~ 0
 PI_SDATA_I
 Wire Wire Line
-	9600 1000 9350 1000
-Wire Wire Line
 	9350 1000 9350 950 
 Wire Wire Line
 	9350 950  9250 950 
@@ -1469,21 +1467,6 @@ $EndComp
 Wire Wire Line
 	14050 1400 14050 1350
 Connection ~ 14050 1350
-$Comp
-L Device:Fuse F1
-U 1 1 607081C8
-P 9750 1000
-F 0 "F1" V 9553 1000 50  0000 C CNN
-F 1 "Fuse" V 9644 1000 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Stelvio-Kontek_PTF78_Horizontal_Open" V 9680 1000 50  0001 C CNN
-F 3 "~" H 9750 1000 50  0001 C CNN
-	1    9750 1000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9950 1000 9900 1000
-Wire Wire Line
-	9350 1100 9950 1100
 $Sheet
 S 13050 4000 1400 1400
 U 608A6138
@@ -2403,4 +2386,21 @@ F 3 "" H 9650 6050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9650 6050 9650 6300
+Wire Wire Line
+	9950 1000 9900 1000
+$Comp
+L Device:Fuse F1
+U 1 1 607081C8
+P 9750 1000
+F 0 "F1" V 9553 1000 50  0000 C CNN
+F 1 "Fuse" V 9644 1000 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Stelvio-Kontek_PTF78_Horizontal_Open" V 9680 1000 50  0001 C CNN
+F 3 "~" H 9750 1000 50  0001 C CNN
+	1    9750 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9350 1000 9600 1000
+Wire Wire Line
+	9950 1100 9350 1100
 $EndSCHEMATC
