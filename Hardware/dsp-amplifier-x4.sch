@@ -2262,7 +2262,7 @@ U 1 1 60704E3B
 P 9050 1050
 F 0 "P1" H 9067 1375 50  0000 C CNN
 F 1 "Conn_WallPlug" H 9067 1284 50  0000 C CNN
-F 2 "" H 9450 1050 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_Wuerth_691311400102_P7.62mm" H 9450 1050 50  0001 C CNN
 F 3 "~" H 9450 1050 50  0001 C CNN
 	1    9050 1050
 	1    0    0    -1  
@@ -2387,21 +2387,6 @@ $EndComp
 Wire Wire Line
 	9650 6050 9650 6300
 Wire Wire Line
-	9950 1000 9900 1000
-$Comp
-L Device:Fuse F1
-U 1 1 607081C8
-P 9750 1000
-F 0 "F1" V 9553 1000 50  0000 C CNN
-F 1 "Fuse" V 9644 1000 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Stelvio-Kontek_PTF78_Horizontal_Open" V 9680 1000 50  0001 C CNN
-F 3 "~" H 9750 1000 50  0001 C CNN
-	1    9750 1000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9350 1000 9600 1000
-Wire Wire Line
 	9950 1100 9350 1100
 NoConn ~ 10500 1750
 NoConn ~ 10500 1950
@@ -2409,4 +2394,6 @@ NoConn ~ 10500 2150
 NoConn ~ 10500 2350
 Text Notes 14450 1100 0    60   ~ 0
 GAIN[1:0]\n00: 12.9 V full-scale\n01: 15.1 V full-scale\n10: 25.15 V full-scale\n11: Software-controlled
+Wire Wire Line
+	9350 1000 9950 1000
 $EndSCHEMATC
