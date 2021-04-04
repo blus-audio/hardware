@@ -2403,4 +2403,10 @@ Wire Wire Line
 	9350 1000 9600 1000
 Wire Wire Line
 	9950 1100 9350 1100
+NoConn ~ 10500 1750
+NoConn ~ 10500 1950
+NoConn ~ 10500 2150
+NoConn ~ 10500 2350
+Text Notes 14450 1100 0    60   ~ 0
+GAIN[1:0]\n00: 12.9 V full-scale\n01: 15.1 V full-scale\n10: 25.15 V full-scale\n11: Software-controlled
 $EndSCHEMATC

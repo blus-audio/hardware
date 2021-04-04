@@ -195,20 +195,6 @@ F 3 "" H 3650 3200 50  0001 C CNN
 	1    3650 3200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C?
-U 1 1 61ACFDC6
-P 4450 5400
-AR Path="/5AFACF29/61ACFDC6" Ref="C?"  Part="1" 
-AR Path="/61ACFDC6" Ref="C?"  Part="1" 
-AR Path="/61AABE2E/61ACFDC6" Ref="C78"  Part="1" 
-F 0 "C78" H 4565 5446 50  0000 L CNN
-F 1 "100n" H 4565 5355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4488 5250 50  0001 C CNN
-F 3 "~" H 4450 5400 50  0001 C CNN
-	1    4450 5400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4350 5150 4450 5150
 Wire Wire Line
@@ -547,6 +533,191 @@ Wire Wire Line
 	2600 1550 2500 1650
 Wire Wire Line
 	2500 1550 2600 1650
-NoConn ~ 4350 4050
 NoConn ~ 4350 4150
+$Comp
+L Device:C C?
+U 1 1 60A7FB68
+P 6850 4000
+AR Path="/5AF9FF80/60A7FB68" Ref="C?"  Part="1" 
+AR Path="/60A7FB68" Ref="C?"  Part="1" 
+AR Path="/61AABE2E/60A7FB68" Ref="C86"  Part="1" 
+F 0 "C86" H 6900 4100 50  0000 L CNN
+F 1 "100n" H 6900 3900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" V 6550 4140 50  0001 C CNN
+F 3 "~" V 6550 4140 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 6850 4000 60  0001 C CNN "Mfr.Nr."
+	1    6850 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3750 6850 3850
+Connection ~ 6500 3750
+Wire Wire Line
+	6500 3750 6850 3750
+$Comp
+L power:GND #PWR?
+U 1 1 60A7FB72
+P 6500 4250
+AR Path="/60A7FB72" Ref="#PWR?"  Part="1" 
+AR Path="/61AABE2E/60A7FB72" Ref="#PWR0120"  Part="1" 
+F 0 "#PWR0120" H 6500 4000 50  0001 C CNN
+F 1 "GND" H 6500 4100 50  0000 C CNN
+F 2 "" H 6500 4250 50  0001 C CNN
+F 3 "" H 6500 4250 50  0001 C CNN
+	1    6500 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3450 6500 3750
+Wire Wire Line
+	6500 4200 6850 4200
+Wire Wire Line
+	6850 4200 6850 4150
+Connection ~ 6500 4200
+Wire Wire Line
+	6500 4200 6500 4250
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60A82673
+P 6500 3450
+AR Path="/60A82673" Ref="#PWR?"  Part="1" 
+AR Path="/61AABE2E/60A82673" Ref="#PWR0121"  Part="1" 
+F 0 "#PWR0121" H 6500 3300 50  0001 C CNN
+F 1 "+3.3V" H 6515 3623 50  0000 C CNN
+F 2 "" H 6500 3450 50  0001 C CNN
+F 3 "" H 6500 3450 50  0001 C CNN
+	1    6500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60A879BB
+P 6150 4000
+AR Path="/5AF9FF80/60A879BB" Ref="C?"  Part="1" 
+AR Path="/60A879BB" Ref="C?"  Part="1" 
+AR Path="/61AABE2E/60A879BB" Ref="C84"  Part="1" 
+F 0 "C84" H 6200 4100 50  0000 L CNN
+F 1 "10u" H 6200 3900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" V 5850 4140 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 5850 4140 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 6150 4000 60  0001 C CNN "Mfr.Nr."
+	1    6150 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60A8AF5C
+P 4450 5400
+AR Path="/5AF9FF80/60A8AF5C" Ref="C?"  Part="1" 
+AR Path="/60A8AF5C" Ref="C?"  Part="1" 
+AR Path="/61AABE2E/60A8AF5C" Ref="C83"  Part="1" 
+F 0 "C83" H 4500 5500 50  0000 L CNN
+F 1 "10u" H 4500 5300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" V 4150 5540 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 4150 5540 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 4450 5400 60  0001 C CNN "Mfr.Nr."
+	1    4450 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60A95304
+P 7650 4000
+AR Path="/5AFACF29/60A95304" Ref="C?"  Part="1" 
+AR Path="/5AFACF57/60A95304" Ref="C?"  Part="1" 
+AR Path="/61AABE2E/60A95304" Ref="C88"  Part="1" 
+F 0 "C88" H 7765 4046 50  0000 L CNN
+F 1 "1u" H 7765 3955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7688 3850 50  0001 C CNN
+F 3 "~" H 7650 4000 50  0001 C CNN
+	1    7650 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60A97BBA
+P 8100 4000
+AR Path="/5AFACF29/60A97BBA" Ref="C?"  Part="1" 
+AR Path="/5AFACF57/60A97BBA" Ref="C?"  Part="1" 
+AR Path="/61AABE2E/60A97BBA" Ref="C89"  Part="1" 
+F 0 "C89" H 8215 4046 50  0000 L CNN
+F 1 "1u" H 8215 3955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 8138 3850 50  0001 C CNN
+F 3 "~" H 8100 4000 50  0001 C CNN
+	1    8100 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3850 8100 3750
+Wire Wire Line
+	8100 3750 7650 3750
+Wire Wire Line
+	7650 3850 7650 3750
+Connection ~ 7650 3750
+Wire Wire Line
+	7650 3750 7250 3750
+Wire Wire Line
+	7250 4200 7650 4200
+Wire Wire Line
+	7650 4200 7650 4150
+Wire Wire Line
+	7650 4200 8100 4200
+Wire Wire Line
+	8100 4200 8100 4150
+Connection ~ 7650 4200
+Wire Wire Line
+	6150 3850 6150 3750
+Wire Wire Line
+	6150 3750 6500 3750
+Wire Wire Line
+	6150 4150 6150 4200
+Wire Wire Line
+	6150 4200 6500 4200
+$Comp
+L Device:C C?
+U 1 1 60AB311A
+P 6500 4000
+AR Path="/5AF9FF80/60AB311A" Ref="C?"  Part="1" 
+AR Path="/60AB311A" Ref="C?"  Part="1" 
+AR Path="/61AABE2E/60AB311A" Ref="C85"  Part="1" 
+F 0 "C85" H 6550 4100 50  0000 L CNN
+F 1 "10u" H 6550 3900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" V 6200 4140 50  0001 C CNN
+F 3 "http://www.murata.com/products/catalog/pdf/c02e.pdf" V 6200 4140 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 6500 4000 60  0001 C CNN "Mfr.Nr."
+	1    6500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60AB6D9C
+P 7250 4000
+AR Path="/5AF9FF80/60AB6D9C" Ref="C?"  Part="1" 
+AR Path="/60AB6D9C" Ref="C?"  Part="1" 
+AR Path="/61AABE2E/60AB6D9C" Ref="C87"  Part="1" 
+F 0 "C87" H 7300 4100 50  0000 L CNN
+F 1 "100n" H 7300 3900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" V 6950 4140 50  0001 C CNN
+F 3 "~" V 6950 4140 50  0001 C CNN
+F 4 "GRM31CR71H475KA12L" H 7250 4000 60  0001 C CNN "Mfr.Nr."
+	1    7250 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4150 7250 4200
+Wire Wire Line
+	7250 3850 7250 3750
+Wire Wire Line
+	6850 3750 7250 3750
+Connection ~ 6850 3750
+Connection ~ 7250 3750
+Wire Wire Line
+	7250 4200 6850 4200
+Connection ~ 7250 4200
+Connection ~ 6850 4200
+Wire Wire Line
+	6500 4150 6500 4200
+Wire Wire Line
+	6500 3850 6500 3750
+NoConn ~ 4350 4050
 $EndSCHEMATC

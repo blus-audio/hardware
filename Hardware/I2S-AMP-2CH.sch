@@ -140,19 +140,6 @@ F 5 "X7R" V 5650 2450 60  0001 C CNN "Dielectric"
 	1    5650 2450
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:GND #PWR073
-U 1 1 5750BB5F
-P 2950 4450
-AR Path="/5AF9FF80/5750BB5F" Ref="#PWR073"  Part="1" 
-AR Path="/608A6138/5750BB5F" Ref="#PWR086"  Part="1" 
-F 0 "#PWR086" H 2950 4200 50  0001 C CNN
-F 1 "GND" H 2950 4300 50  0000 C CNN
-F 2 "" H 2950 4450 50  0000 C CNN
-F 3 "" H 2950 4450 50  0000 C CNN
-	1    2950 4450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2950 1450 2950 1500
 Wire Wire Line
@@ -222,20 +209,6 @@ SKP_OUTB+
 Wire Wire Line
 	4500 5600 4500 5700
 $Comp
-L power:+3.3V #PWR?
-U 1 1 60734777
-P 3100 4350
-AR Path="/60734777" Ref="#PWR?"  Part="1" 
-AR Path="/5AF9FF80/60734777" Ref="#PWR074"  Part="1" 
-AR Path="/608A6138/60734777" Ref="#PWR087"  Part="1" 
-F 0 "#PWR087" H 3100 4200 50  0001 C CNN
-F 1 "+3.3V" H 3115 4523 50  0000 C CNN
-F 2 "" H 3100 4350 50  0001 C CNN
-F 3 "" H 3100 4350 50  0001 C CNN
-	1    3100 4350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VAA #PWR077
 U 1 1 60755A7B
 P 4500 5600
@@ -256,26 +229,8 @@ Wire Wire Line
 	3250 2350 3500 2350
 Wire Wire Line
 	2950 1450 3250 1450
-Text Label 3100 3050 0    60   ~ 0
-FREQ
-Text Label 3100 3150 0    60   ~ 0
-PBTL
 Wire Wire Line
 	3100 3050 3500 3050
-Wire Wire Line
-	3500 3150 3100 3150
-Text Label 2650 4400 0    60   ~ 0
-FREQ
-Text Label 3500 4400 2    60   ~ 0
-PBTL
-Wire Wire Line
-	3500 4400 3100 4400
-Wire Wire Line
-	3100 4350 3100 4400
-Wire Wire Line
-	2950 4450 2950 4400
-Wire Wire Line
-	2950 4400 2650 4400
 $Comp
 L power:+3.3V #PWR?
 U 1 1 60941DE7
@@ -652,19 +607,6 @@ Wire Wire Line
 	4500 6050 4500 6100
 Wire Wire Line
 	4100 6050 4100 6100
-$Comp
-L tas5760:TAS5760MDCAR U6
-U 1 1 608A7BF7
-P 4400 3200
-AR Path="/5AF9FF80/608A7BF7" Ref="U6"  Part="1" 
-AR Path="/608A6138/608A7BF7" Ref="U7"  Part="1" 
-F 0 "U6" H 4400 5150 60  0001 C TNN
-F 1 "TAS5760MDCAR" H 4400 4697 60  0000 C CNN
-F 2 "Package_SO:HTSSOP-32-1EP_6.1x11mm_P0.65mm_EP5.2x11mm_Mask4.11x4.36mm_ThermalVias" H 4300 3100 60  0001 C CNN
-F 3 "" H 4400 3200 60  0000 C CNN
-	1    4400 3200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5300 3950 5900 3950
 Wire Wire Line
@@ -717,4 +659,41 @@ Wire Wire Line
 Wire Wire Line
 	4900 4650 4900 4600
 Connection ~ 4700 4650
+$Comp
+L power:GND #PWR0122
+U 1 1 60B105F1
+P 3050 3150
+AR Path="/5AF9FF80/60B105F1" Ref="#PWR0122"  Part="1" 
+AR Path="/608A6138/60B105F1" Ref="#PWR0124"  Part="1" 
+F 0 "#PWR0124" H 3050 2900 50  0001 C CNN
+F 1 "GND" H 3050 3000 50  0000 C CNN
+F 2 "" H 3050 3150 50  0000 C CNN
+F 3 "" H 3050 3150 50  0000 C CNN
+	1    3050 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L tas5760:TAS5760MDCAR U6
+U 1 1 608A7BF7
+P 4400 3200
+AR Path="/5AF9FF80/608A7BF7" Ref="U6"  Part="1" 
+AR Path="/608A6138/608A7BF7" Ref="U7"  Part="1" 
+F 0 "U6" H 4400 5150 60  0001 C TNN
+F 1 "TAS5760MDCAR" H 4400 4697 60  0000 C CNN
+F 2 "Package_SO:HTSSOP-32-1EP_6.1x11mm_P0.65mm_EP5.2x11mm_Mask4.11x4.36mm_ThermalVias" H 4300 3100 60  0001 C CNN
+F 3 "" H 4400 3200 60  0000 C CNN
+	1    4400 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3150 3100 3150
+Wire Wire Line
+	3100 3050 3100 3150
+Connection ~ 3100 3150
+Wire Wire Line
+	3100 3150 3500 3150
+Text Notes 5950 2150 0    60   ~ 0
+Filters as recommended for 4 Ohm speakers
+Text Notes 1950 3200 0    60   ~ 0
+384 kHz switching\nStereo BTL
 $EndSCHEMATC
