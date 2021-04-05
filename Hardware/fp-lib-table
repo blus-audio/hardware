@@ -3,4 +3,5 @@
   (lib (name da100j)(type KiCad)(uri ${KIPRJMOD}/Library_transformer_audio/da100j.pretty)(options "")(descr ""))
   (lib (name connectors_audio)(type KiCad)(uri ${KIPRJMOD}/Library_connectors_audio/connectors_audio.pretty)(options "")(descr ""))
   (lib (name rpi_socket)(type KiCad)(uri ${KIPRJMOD}/Library_rpi/rpi_socket.pretty)(options "")(descr ""))
+  (lib (name terminal_connectors)(type KiCad)(uri ${KIPRJMOD}/Library_terminal_connectors/terminal_connectors.pretty)(options "")(descr ""))
 )
