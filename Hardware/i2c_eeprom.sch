@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 8
+Sheet 8 8
 Title ""
 Date ""
 Rev ""
@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Memory_EEPROM:24LC1025 U10
-U 1 1 619E8E3D
-P 2700 2350
-F 0 "U10" H 2700 2831 50  0000 C CNN
-F 1 "24LC1025" H 2700 2740 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 2700 2350 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21941B.pdf" H 2700 2350 50  0001 C CNN
-	1    2700 2350
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3.3V #PWR0112
 U 1 1 619E8E43
@@ -35,8 +24,6 @@ F 3 "" H 2700 1800 50  0001 C CNN
 	1    2700 1800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2700 1800 2700 2050
 $Comp
 L power:GND #PWR0113
 U 1 1 619E8E4A
@@ -48,56 +35,23 @@ F 3 "" H 2700 2700 50  0001 C CNN
 	1    2700 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2700 2650 2700 2700
 $Comp
 L power:+3.3V #PWR0111
 U 1 1 619E8E55
-P 2050 1800
-F 0 "#PWR0111" H 2050 1650 50  0001 C CNN
-F 1 "+3.3V" H 2065 1973 50  0000 C CNN
-F 2 "" H 2050 1800 50  0001 C CNN
-F 3 "" H 2050 1800 50  0001 C CNN
-	1    2050 1800
+P 1750 1750
+F 0 "#PWR0111" H 1750 1600 50  0001 C CNN
+F 1 "+3.3V" H 1765 1923 50  0000 C CNN
+F 2 "" H 1750 1750 50  0001 C CNN
+F 3 "" H 1750 1750 50  0001 C CNN
+	1    1750 1750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2050 1800 2050 2250
-Wire Wire Line
-	2050 2450 2300 2450
-$Comp
-L power:GND #PWR0114
-U 1 1 619E8E5D
-P 3150 2700
-F 0 "#PWR0114" H 3150 2450 50  0001 C CNN
-F 1 "GND" H 3150 2550 50  0000 C CNN
-F 2 "" H 3150 2700 50  0001 C CNN
-F 3 "" H 3150 2700 50  0001 C CNN
-	1    3150 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 2450 3150 2450
-Wire Wire Line
-	3150 2450 3150 2700
-Wire Wire Line
-	2300 2350 2050 2350
-Connection ~ 2050 2350
-Wire Wire Line
-	2050 2350 2050 2450
-Wire Wire Line
-	2050 2250 2300 2250
-Connection ~ 2050 2250
-Wire Wire Line
-	2050 2250 2050 2350
-Text HLabel 3150 2250 2    60   BiDi ~ 0
-EEPROM_SDA
-Text HLabel 3150 2350 2    60   BiDi ~ 0
-EEPROM_SCL
-Wire Wire Line
-	3150 2250 3100 2250
-Wire Wire Line
-	3100 2350 3150 2350
+	1750 1750 1750 2200
+Text HLabel 3150 2200 2    60   Input ~ 0
+EEPROM_SCK
+Text HLabel 3150 2300 2    60   Input ~ 0
+EEPROM_MOSI
 $Comp
 L Device:C C?
 U 1 1 60A729EF
@@ -170,4 +124,38 @@ F 3 "" H 4150 1850 50  0001 C CNN
 	1    4150 1850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Memory_EEPROM:25LCxxx U10
+U 1 1 60A473E7
+P 2700 2300
+F 0 "U10" H 2700 2781 50  0000 C CNN
+F 1 "25LCxxx" H 2700 2690 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_5.275x5.275mm_P1.27mm" H 2700 2300 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21832H.pdf" H 2700 2300 50  0001 C CNN
+	1    2700 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 2600 2700 2700
+Wire Wire Line
+	3150 2200 3100 2200
+Text HLabel 3150 2400 2    60   Output ~ 0
+EEPROM_MISO
+Wire Wire Line
+	3150 2300 3100 2300
+Wire Wire Line
+	3100 2400 3150 2400
+Text HLabel 2250 2400 0    60   Input ~ 0
+EEPROM_NCS
+Wire Wire Line
+	2300 2400 2250 2400
+Wire Wire Line
+	1750 2200 2300 2200
+Wire Wire Line
+	2300 2300 1750 2300
+Wire Wire Line
+	1750 2300 1750 2200
+Connection ~ 1750 2200
+Wire Wire Line
+	2700 2000 2700 1800
 $EndSCHEMATC
