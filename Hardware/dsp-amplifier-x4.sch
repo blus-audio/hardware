@@ -39,17 +39,6 @@ F7 "CLK5" O R 10500 2250 60
 F8 "CLK6" O R 10500 2350 60 
 F9 "CLK7" O R 10500 2450 60 
 $EndSheet
-$Comp
-L DSP_AnalogDevices:ADAU1452 U1
-U 1 1 6065B65B
-P 3500 3650
-F 0 "U1" H 3500 5731 50  0000 C CNN
-F 1 "ADAU1452" H 3500 5640 50  0000 C CNN
-F 2 "Package_CSP:LFCSP-72-1EP_10x10mm_P0.5mm_EP5.3x5.3mm" H 3500 3650 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1452_1451_1450.pdf" H 3500 3650 50  0001 C CNN
-	1    3500 3650
-	1    0    0    -1  
-$EndComp
 Text Label 2000 2350 0    60   ~ 0
 DSP_CLOCK
 Wire Wire Line
@@ -244,14 +233,8 @@ Text Label 10850 8050 0    60   ~ 0
 PI_MOSI0
 Text Label 10850 7950 0    60   ~ 0
 PI_MISO0
-Wire Wire Line
-	10650 7950 11250 7950
-Wire Wire Line
-	11250 8050 10650 8050
 Text Label 10850 8150 0    60   ~ 0
 PI_SCLK0
-Wire Wire Line
-	11250 8150 10650 8150
 Text Label 8350 8350 0    60   ~ 0
 PI_MUTE
 Text Label 8350 7850 0    60   ~ 0
@@ -663,8 +646,6 @@ PVDD
 Wire Wire Line
 	1700 1450 2000 1450
 Connection ~ 2000 1450
-Text Label 4050 7050 2    60   ~ 0
-PVDD
 Text Label 3300 1250 3    60   ~ 0
 PVDD
 Wire Wire Line
@@ -927,7 +908,6 @@ Wire Wire Line
 	2200 9800 2200 10100
 Text Label 3700 9800 3    60   ~ 0
 AVDD
-NoConn ~ 4400 2350
 Text Label 4900 1950 2    60   ~ 0
 VDRIVE
 Wire Wire Line
@@ -1080,8 +1060,6 @@ F 3 "~" H 4600 3450 50  0001 C CNN
 	1    4600 3450
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4400 3350 4450 3350
 Wire Wire Line
 	4450 3450 4400 3450
 Text Label 12400 3500 0    60   ~ 0
@@ -2272,4 +2250,83 @@ Text Label 2000 4150 0    60   ~ 0
 PI_MUTE
 Wire Wire Line
 	2000 4150 2600 4150
+Text Label 4050 7050 2    60   ~ 0
+IOVDD
+$Comp
+L Connector:TestPoint TP1
+U 1 1 6072217C
+P 4450 2350
+F 0 "TP1" V 4404 2538 50  0000 L CNN
+F 1 "TestPoint" V 4495 2538 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4650 2350 50  0001 C CNN
+F 3 "~" H 4650 2350 50  0001 C CNN
+	1    4450 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L DSP_AnalogDevices:ADAU1452 U1
+U 1 1 6065B65B
+P 3500 3650
+F 0 "U1" H 3500 5731 50  0000 C CNN
+F 1 "ADAU1452" H 3500 5640 50  0000 C CNN
+F 2 "Package_CSP:LFCSP-72-1EP_10x10mm_P0.5mm_EP5.3x5.3mm" H 3500 3650 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1452_1451_1450.pdf" H 3500 3650 50  0001 C CNN
+	1    3500 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2350 4400 2350
+NoConn ~ 4400 3350
+NoConn ~ 2600 4050
+NoConn ~ 2600 4250
+$Comp
+L Connector:TestPoint TP3
+U 1 1 607AA7B9
+P 11700 7950
+F 0 "TP3" V 11654 8138 50  0000 L CNN
+F 1 "MISO" V 11745 8138 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 11900 7950 50  0001 C CNN
+F 3 "~" H 11900 7950 50  0001 C CNN
+	1    11700 7950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 607C870C
+P 12150 8050
+F 0 "TP4" V 12104 8238 50  0000 L CNN
+F 1 "MOSI" V 12195 8238 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 12350 8050 50  0001 C CNN
+F 3 "~" H 12350 8050 50  0001 C CNN
+	1    12150 8050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 607E5FAD
+P 12600 8150
+F 0 "TP5" V 12554 8338 50  0000 L CNN
+F 1 "SCLK" V 12645 8338 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 12800 8150 50  0001 C CNN
+F 3 "~" H 12800 8150 50  0001 C CNN
+	1    12600 8150
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 6082322F
+P 11250 7850
+F 0 "TP2" V 11204 8038 50  0000 L CNN
+F 1 "NCS" V 11295 8038 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 11450 7850 50  0001 C CNN
+F 3 "~" H 11450 7850 50  0001 C CNN
+	1    11250 7850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10650 7950 11700 7950
+Wire Wire Line
+	10650 8050 12150 8050
+Wire Wire Line
+	10650 8150 12600 8150
 $EndSCHEMATC
