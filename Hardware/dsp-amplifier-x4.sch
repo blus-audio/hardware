@@ -225,15 +225,15 @@ Wire Wire Line
 	9750 6300 9650 6300
 Wire Wire Line
 	9650 6300 9650 6350
-Text Label 10850 7850 0    60   ~ 0
+Text Label 11250 7850 2    60   ~ 0
 PI_NCE0
 Wire Wire Line
 	11250 7850 10650 7850
-Text Label 10850 8050 0    60   ~ 0
+Text Label 11250 8050 2    60   ~ 0
 PI_MOSI0
-Text Label 10850 7950 0    60   ~ 0
+Text Label 11250 7950 2    60   ~ 0
 PI_MISO0
-Text Label 10850 8150 0    60   ~ 0
+Text Label 11250 8150 2    60   ~ 0
 PI_SCLK0
 Text Label 8350 8350 0    60   ~ 0
 PI_MUTE
@@ -630,7 +630,7 @@ P 1600 6850
 AR Path="/5AFACEFB/612BC3BD" Ref="FB?"  Part="1" 
 AR Path="/612BC3BD" Ref="FB1"  Part="1" 
 F 0 "FB1" V 1326 6850 50  0000 C CNN
-F 1 "600/100M" V 1417 6850 50  0000 C CNN
+F 1 "BLM18SP601SZ1D (600/100M)" V 1417 6850 50  0000 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1530 6850 50  0001 C CNN
 F 3 "~" H 1600 6850 50  0001 C CNN
 	1    1600 6850
@@ -924,70 +924,42 @@ NoConn ~ 4400 2950
 $Comp
 L Device:R_POT RV1
 U 1 1 607C4CE2
-P 5850 2100
-F 0 "RV1" H 5781 2146 50  0000 R CNN
-F 1 "R_POT" H 5781 2055 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 5850 2100 50  0001 C CNN
-F 3 "~" H 5850 2100 50  0001 C CNN
-	1    5850 2100
+P 4950 1250
+F 0 "RV1" H 4881 1296 50  0000 R CNN
+F 1 "PTV09A-1020F-B203" H 4881 1205 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 4950 1250 50  0001 C CNN
+F 3 "~" H 4950 1250 50  0001 C CNN
+	1    4950 1250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_POT RV2
 U 1 1 607C7CF2
-P 6850 2100
-F 0 "RV2" H 6781 2146 50  0000 R CNN
-F 1 "R_POT" H 6781 2055 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 6850 2100 50  0001 C CNN
-F 3 "~" H 6850 2100 50  0001 C CNN
-	1    6850 2100
-	1    0    0    -1  
-$EndComp
-Text Label 5850 1650 3    60   ~ 0
-AVDD
-Wire Wire Line
-	5850 1650 5850 1900
-Wire Wire Line
-	5850 1900 6850 1900
-Wire Wire Line
-	6850 1900 6850 1950
-Connection ~ 5850 1900
-Wire Wire Line
-	5850 1900 5850 1950
-$Comp
-L power:GND #PWR021
-U 1 1 607F06EF
-P 5850 2300
-F 0 "#PWR021" H 5850 2050 50  0001 C CNN
-F 1 "GND" H 5850 2150 50  0000 C CNN
-F 2 "" H 5850 2300 50  0001 C CNN
-F 3 "" H 5850 2300 50  0001 C CNN
-	1    5850 2300
+P 5950 1250
+F 0 "RV2" H 5881 1296 50  0000 R CNN
+F 1 "PTV09A-1020F-B203" H 5881 1205 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 5950 1250 50  0001 C CNN
+F 3 "~" H 5950 1250 50  0001 C CNN
+	1    5950 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 2250 5850 2300
-$Comp
-L power:GND #PWR023
-U 1 1 608051CA
-P 6850 2300
-F 0 "#PWR023" H 6850 2050 50  0001 C CNN
-F 1 "GND" H 6850 2150 50  0000 C CNN
-F 2 "" H 6850 2300 50  0001 C CNN
-F 3 "" H 6850 2300 50  0001 C CNN
-	1    6850 2300
-	1    0    0    -1  
-$EndComp
+	4950 800  4950 1050
 Wire Wire Line
-	6850 2300 6850 2250
-Text Label 6350 2100 2    60   ~ 0
+	4950 1050 5950 1050
+Wire Wire Line
+	5950 1050 5950 1100
+Connection ~ 4950 1050
+Wire Wire Line
+	4950 1050 4950 1100
+Text Label 5450 1250 2    60   ~ 0
 VPOT0
 Wire Wire Line
-	6000 2100 6350 2100
-Text Label 7350 2100 2    60   ~ 0
+	5100 1250 5450 1250
+Text Label 6450 1250 2    60   ~ 0
 VPOT1
 Wire Wire Line
-	7000 2100 7350 2100
+	6100 1250 6450 1250
 Text Label 2250 4750 0    60   ~ 0
 VPOT0
 Wire Wire Line
@@ -2233,17 +2205,6 @@ Wire Wire Line
 Text Label 4050 7050 2    60   ~ 0
 IOVDD
 $Comp
-L Connector:TestPoint TP1
-U 1 1 6072217C
-P 4450 2350
-F 0 "TP1" V 4404 2538 50  0000 L CNN
-F 1 "TestPoint" V 4495 2538 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4650 2350 50  0001 C CNN
-F 3 "~" H 4650 2350 50  0001 C CNN
-	1    4450 2350
-	0    1    1    0   
-$EndComp
-$Comp
 L DSP_AnalogDevices:ADAU1452 U1
 U 1 1 6065B65B
 P 3500 3650
@@ -2254,76 +2215,13 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU145
 	1    3500 3650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4450 2350 4400 2350
 NoConn ~ 4400 3350
 NoConn ~ 2600 4050
 NoConn ~ 2600 4250
-$Comp
-L Connector:TestPoint TP3
-U 1 1 607AA7B9
-P 11700 7950
-F 0 "TP3" V 11654 8138 50  0000 L CNN
-F 1 "MISO" V 11745 8138 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 11900 7950 50  0001 C CNN
-F 3 "~" H 11900 7950 50  0001 C CNN
-	1    11700 7950
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP4
-U 1 1 607C870C
-P 12150 8050
-F 0 "TP4" V 12104 8238 50  0000 L CNN
-F 1 "MOSI" V 12195 8238 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 12350 8050 50  0001 C CNN
-F 3 "~" H 12350 8050 50  0001 C CNN
-	1    12150 8050
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP5
-U 1 1 607E5FAD
-P 12600 8150
-F 0 "TP5" V 12554 8338 50  0000 L CNN
-F 1 "SCLK" V 12645 8338 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 12800 8150 50  0001 C CNN
-F 3 "~" H 12800 8150 50  0001 C CNN
-	1    12600 8150
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP2
-U 1 1 6082322F
-P 11250 7850
-F 0 "TP2" V 11204 8038 50  0000 L CNN
-F 1 "NCS" V 11295 8038 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 11450 7850 50  0001 C CNN
-F 3 "~" H 11450 7850 50  0001 C CNN
-	1    11250 7850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10650 7950 11700 7950
-Wire Wire Line
-	10650 8050 12150 8050
-Wire Wire Line
-	10650 8150 12600 8150
 NoConn ~ 9050 7050
 NoConn ~ 9050 8050
 NoConn ~ 9050 8150
 NoConn ~ 9050 8250
-$Comp
-L power:+5VA #PWR024
-U 1 1 60933EE6
-P 8300 3000
-F 0 "#PWR024" H 8300 2850 50  0001 C CNN
-F 1 "+5VA" H 8315 3173 50  0000 C CNN
-F 2 "" H 8300 3000 50  0001 C CNN
-F 3 "" H 8300 3000 50  0001 C CNN
-	1    8300 3000
-	1    0    0    -1  
-$EndComp
 $Comp
 L Interface_Optical:TSOP583xx U2
 U 1 1 60970E2B
@@ -2350,10 +2248,8 @@ Wire Wire Line
 	12800 6900 12850 6900
 Wire Wire Line
 	12850 6900 12850 6950
-Text Label 11350 7050 2    60   ~ 0
+Text Label 11250 7050 2    60   ~ 0
 IR_INPUT
-Wire Wire Line
-	11350 7050 10650 7050
 Text Label 13250 6700 2    60   ~ 0
 IR_INPUT
 Wire Wire Line
@@ -2381,4 +2277,52 @@ Wire Wire Line
 	11100 4900 11750 4900
 Wire Wire Line
 	11100 5000 11750 5000
+Wire Wire Line
+	11250 7950 10650 7950
+Wire Wire Line
+	10650 8050 11250 8050
+Wire Wire Line
+	11250 8150 10650 8150
+Wire Wire Line
+	11250 7050 10650 7050
+NoConn ~ 4400 2350
+$Comp
+L power:+5VA #PWR0116
+U 1 1 609E250E
+P 8300 3000
+F 0 "#PWR0116" H 8300 2850 50  0001 C CNN
+F 1 "+5VA" H 8315 3173 50  0000 C CNN
+F 2 "" H 8300 3000 50  0001 C CNN
+F 3 "" H 8300 3000 50  0001 C CNN
+	1    8300 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1450 5950 1400
+$Comp
+L power:GND #PWR023
+U 1 1 608051CA
+P 5950 1450
+F 0 "#PWR023" H 5950 1200 50  0001 C CNN
+F 1 "GND" H 5950 1300 50  0000 C CNN
+F 2 "" H 5950 1450 50  0001 C CNN
+F 3 "" H 5950 1450 50  0001 C CNN
+	1    5950 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 1400 4950 1450
+$Comp
+L power:GND #PWR021
+U 1 1 607F06EF
+P 4950 1450
+F 0 "#PWR021" H 4950 1200 50  0001 C CNN
+F 1 "GND" H 4950 1300 50  0000 C CNN
+F 2 "" H 4950 1450 50  0001 C CNN
+F 3 "" H 4950 1450 50  0001 C CNN
+	1    4950 1450
+	1    0    0    -1  
+$EndComp
+Text Label 4950 800  3    60   ~ 0
+AVDD
 $EndSCHEMATC
