@@ -597,7 +597,7 @@ U 1 1 6119A08E
 P 6300 4850
 F 0 "J1" H 6350 5267 50  0000 C CNN
 F 1 "USBi" H 6350 5176 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 6300 4850 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 6300 4850 50  0001 C CNN
 F 3 "~" H 6300 4850 50  0001 C CNN
 	1    6300 4850
 	1    0    0    -1  
@@ -1754,7 +1754,7 @@ U 1 1 606ED66E
 P 8550 3350
 F 0 "J2" H 8600 3867 50  0000 C CNN
 F 1 "EXT" H 8600 3776 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 8550 3350 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical" H 8550 3350 50  0001 C CNN
 F 3 "~" H 8550 3350 50  0001 C CNN
 	1    8550 3350
 	1    0    0    -1  
@@ -2233,16 +2233,12 @@ Text Label 4950 800  3    60   ~ 0
 AVDD
 Wire Wire Line
 	14000 1800 14000 1850
-Text Label 13700 1350 0    60   ~ 0
+Text Label 13500 1350 0    60   ~ 0
 GAIN0_OUT
-Text Label 12850 1350 0    60   ~ 0
+Text Label 12650 1350 0    60   ~ 0
 GAIN1_OUT
 Wire Wire Line
-	12850 1350 13150 1350
-Wire Wire Line
 	13150 1350 13150 1500
-Wire Wire Line
-	13700 1350 14000 1350
 Wire Wire Line
 	14000 1350 14000 1500
 Text Label 5400 2850 2    60   ~ 0
@@ -2306,4 +2302,8 @@ Wire Wire Line
 Connection ~ 11350 6600
 Wire Wire Line
 	11350 6600 11350 6650
+Wire Wire Line
+	12650 1350 13150 1350
+Wire Wire Line
+	13500 1350 14000 1350
 $EndSCHEMATC
