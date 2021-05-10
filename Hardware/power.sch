@@ -812,4 +812,6 @@ Connection ~ 7000 2850
 Wire Wire Line
 	7000 4700 7000 4800
 Connection ~ 7000 4700
+Text Notes 3900 2150 0    60   ~ 0
+Alternative: TPS54302, TPS54202
 $EndSCHEMATC
