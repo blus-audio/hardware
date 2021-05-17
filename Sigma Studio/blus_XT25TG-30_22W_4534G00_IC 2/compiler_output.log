@@ -1,0 +1,96 @@
+ADAU145X Assembler, Analog Devices Inc.
+Version: 4.6.0,1809  (built 12/23/2020)
+
+##### Compile Started: Monday, May 17, 2021 7:39:47 PM #####
+ADAU145X Assembler, Analog Devices Inc.
+Version: 4.6.0,1809  (built 12/23/2020)
+
+##### Compile Started: Monday, May 17, 2021 7:39:47 PM #####
+##### Compile succeeded:  0 errors, 0 warnings #####
+
+##### Summary #####
+DM0 RAM used:       00270    (of 20480)
+DM1 RAM used:       00265    (of 20480)
+PM  RAM used(Data): 00000    (of 8192)
+PM  RAM used(Inst): 00739    (of 8192) 598 instructions (32bit: 457  64bit: 141)
+Total PM used:      00739    (of 8192)
+
+--------------------------------------------------------------------------------------
+STREAM                        Inst      Inst      DM0     DM1     PM
+Instance                      (cycles)  (size)    
+--------------------------------------------------------------------------------------
+STACK                          -         -        16      0       0       
+Crossover1                    62        90        40      62      0
+Woofer filters                36        52        41      47      0
+Tweeter filters               27        51        28      34      0
+FRAMEWORK                     62        43        16      7       0
+Input Select                  23        28        9       0       0
+Gen Filter1                   14        26        11      14      0
+Param EQ1_3                   9         16        5       10      0
+Param EQ1_4                   9         16        5       10      0
+Signal Detect_3               14        14        4       1       0
+Signal Detect_4               14        14        4       1       0
+Signal Detect_2               14        14        4       1       0
+Signal Detect                 14        14        4       1       0
+Nx2-3                         10        12        9       2       0
+Nx2-1                         10        12        9       2       0
+Tweeter delay                 10        12        1       16      0
+MasterLimit                   10        11        5       2       0
+Mute tweeter L                8         11        3       1       0
+Mute tweeter R                8         11        3       1       0
+Mute woofer L                 8         11        3       1       0
+Mute woofer R                 8         11        3       1       0
+AsrcIn1                       11        11        0       8       0
+Lookup Table1                 7         8         16      1       0
+Nx2-2                         8         8         1       2       0
+Logic3_3                      8         8         0       1       0
+Add1                          8         8         0       1       0
+Logic3_2                      8         8         0       1       0
+Logic3                        8         8         0       1       0
+Mg2                           6         6         2       1       0
+Mg1                           6         6         2       1       0
+ASRC Lock_4                   5         6         1       1       0
+ASRC Lock_3                   5         6         1       1       0
+ASRC Lock_2                   5         6         1       1       0
+ASRC Lock                     5         6         1       1       0
+ZeroComp3_4                   5         5         1       1       0
+ZeroComp1_2                   5         5         1       1       0
+Buff1_4                       5         5         1       1       0
+Buff1_3                       5         5         1       1       0
+Buff1_2                       5         5         1       1       0
+ZeroComp3_5                   5         5         1       1       0
+Buff1                         5         5         1       1       0
+ZeroComp3_2                   5         5         1       1       0
+ZeroComp3_3                   5         5         1       1       0
+Shift in 2                    4         4         1       1       0
+Shift in 4                    4         4         1       1       0
+Shift in 3                    4         4         1       1       0
+Logic5_2                      4         4         0       1       0
+Logic5_3                      4         4         0       1       0
+Logic5_4                      4         4         0       1       0
+Logic5                        4         4         0       1       0
+Logic2_2                      4         4         0       1       0
+Logic2                        4         4         0       1       0
+Logic2_4                      4         4         0       1       0
+Logic2_3                      4         4         0       1       0
+Gain 1                        2         2         1       1       0
+ASRC Compare_4                2         2         1       1       0
+Gain 0                        2         2         1       1       0
+ASRC Compare                  2         2         1       1       0
+ASRC Compare_3                2         2         1       1       0
+ASRC Compare_2                2         2         1       1       0
+B                             2         2         0       0       0
+A                             2         2         0       0       0
+Amplifier Shutdown            2         2         0       0       0
+SpdifOut1                     2         2         0       0       0
+SpdifOut2                     2         2         0       0       0
+C                             2         2         0       0       0
+Amplifier gain 1              2         2         0       0       0
+Amplifier Mute                2         2         0       0       0
+Amplifier gain 0              2         2         0       0       0
+D                             2         2         0       0       0
+--------------------------------------------------------------------------------------
+Total                         581       685       266     261     0
+--------------------------------------------------------------------------------------
+(% Fs=48.0kHz)                10%       9%        2%      2%      0%
+
