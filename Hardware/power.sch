@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 8
+Sheet 8 8
 Title "Supply"
 Date "2021-04-01"
 Rev "V0.1"
@@ -338,22 +338,8 @@ F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 8550 4450 50  0001 C C
 	1    8450 4700
 	1    0    0    -1  
 $EndComp
-$Comp
-L Converter_ACDC:IRM-60-24 PS1
-U 1 1 606647DE
-P 1300 2150
-F 0 "PS1" H 1300 2517 50  0000 C CNN
-F 1 "IRM-60-24" H 1300 2426 50  0000 C CNN
-F 2 "Converter_ACDC:Converter_ACDC_MeanWell_IRM-60-xx_THT" H 1300 1750 50  0001 C CNN
-F 3 "http://www.meanwellusa.com/productPdf.aspx?i=687" H 1300 2150 50  0001 C CNN
-	1    1300 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1700 2050 1950 2050
 Wire Wire Line
 	1950 2050 1950 3900
-Connection ~ 1950 2050
 $Comp
 L power:GND #PWR035
 U 1 1 6066C031
@@ -366,23 +352,13 @@ F 3 "" H 1750 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1700 2250 1750 2250
-Wire Wire Line
 	1750 2250 1750 2300
-Text HLabel 2150 1850 2    60   Output ~ 0
+Text HLabel 2350 2050 2    60   Output ~ 0
 VOUT_24V0
-Wire Wire Line
-	2150 1850 1950 1850
-Wire Wire Line
-	1950 1850 1950 2050
-Text HLabel 850  2050 0    60   Input ~ 0
-AC_L
-Text HLabel 850  2250 0    60   Input ~ 0
-AC_N
-Wire Wire Line
-	900  2050 850  2050
-Wire Wire Line
-	900  2250 850  2250
+Text HLabel 1200 2050 0    60   Input ~ 0
+24V0_IN
+Text HLabel 1200 2250 0    60   Input ~ 0
+GND_IN
 $Comp
 L Device:C C35
 U 1 1 606C38DB
@@ -469,4 +445,11 @@ Wire Wire Line
 Connection ~ 7000 4700
 Text Notes 3350 3750 0    60   ~ 0
 Alternative: TPS54302, TPS54202
+Wire Wire Line
+	1200 2050 1950 2050
+Wire Wire Line
+	1200 2250 1750 2250
+Wire Wire Line
+	1950 2050 2350 2050
+Connection ~ 1950 2050
 $EndSCHEMATC

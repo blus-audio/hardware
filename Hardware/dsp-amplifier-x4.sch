@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 9950 900  1200 400 
-U 5AFACF29
-F0 "Power" 60
-F1 "power.sch" 60
-F2 "VOUT_3V3" O R 11150 1050 60 
-F3 "VOUT_5V0" O R 11150 1150 60 
-F4 "VOUT_24V0" O R 11150 950 60 
-F5 "AC_L" I L 9950 1000 60 
-F6 "AC_N" I L 9950 1100 60 
-$EndSheet
-$Sheet
 S 9950 1600 550  1000
 U 5AFACF57
 F0 "Clock" 60
@@ -376,14 +365,6 @@ Wire Wire Line
 	4750 3050 5400 3050
 Text Label 8000 7550 0    60   ~ 0
 PI_SDATA_I
-Wire Wire Line
-	9350 1000 9350 950 
-Wire Wire Line
-	9350 950  9250 950 
-Wire Wire Line
-	9350 1100 9350 1150
-Wire Wire Line
-	9350 1150 9250 1150
 Wire Wire Line
 	11550 2250 10850 2250
 Wire Wire Line
@@ -1826,17 +1807,6 @@ $EndComp
 Wire Wire Line
 	7600 3450 7600 3500
 Connection ~ 7600 3450
-$Comp
-L Connector:Conn_WallPlug P1
-U 1 1 60704E3B
-P 9050 1050
-F 0 "P1" H 9067 1375 50  0000 C CNN
-F 1 "Conn_WallPlug" H 9067 1284 50  0000 C CNN
-F 2 "terminal_connectors:wuerth_691216410002" H 9450 1050 50  0001 C CNN
-F 3 "~" H 9450 1050 50  0001 C CNN
-	1    9050 1050
-	1    0    0    -1  
-$EndComp
 Text Label 2000 3750 0    60   ~ 0
 USB_LRCLK
 Text Label 2000 3650 0    60   ~ 0
@@ -1945,16 +1915,12 @@ F 3 "" H 9650 6050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9650 6050 9650 6300
-Wire Wire Line
-	9950 1100 9350 1100
 NoConn ~ 10500 1750
 NoConn ~ 10500 1950
 NoConn ~ 10500 2150
 NoConn ~ 10500 2350
 Text Notes 14350 1600 0    60   ~ 0
 GAIN[1:0]\n00: 12.9 V full-scale\n01: 15.1 V full-scale\n10: 25.15 V full-scale\n11: Software-controlled
-Wire Wire Line
-	9350 1000 9950 1000
 Text Label 5300 5150 2    60   ~ 0
 PI_NCE0
 Text Label 5300 5050 2    60   ~ 0
@@ -2309,4 +2275,26 @@ Wire Wire Line
 Wire Wire Line
 	2000 4050 2600 4050
 NoConn ~ 9050 8350
+$Comp
+L Connector:Screw_Terminal_01x02 J11
+U 1 1 60D6FB76
+P 9750 1000
+F 0 "J11" H 9830 992 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 9830 901 50  0000 L CNN
+F 2 "terminal_connectors:wuerth_691216410002" H 9750 1000 50  0001 C CNN
+F 3 "~" H 9750 1000 50  0001 C CNN
+	1    9750 1000
+	-1   0    0    -1  
+$EndComp
+$Sheet
+S 9950 900  1200 400 
+U 5AFACF29
+F0 "Power" 60
+F1 "power.sch" 60
+F2 "VOUT_3V3" O R 11150 1050 60 
+F3 "VOUT_5V0" O R 11150 1150 60 
+F4 "VOUT_24V0" O R 11150 950 60 
+F5 "24V0_IN" I L 9950 1000 60 
+F6 "GND_IN" I L 9950 1100 60 
+$EndSheet
 $EndSCHEMATC
