@@ -1,0 +1,68 @@
+11-20 16:55:41 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 312:Plugin executed on: 'win32'
+11-20 16:55:41 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 313:Plugin executed with python version: '3.9.6 (default, Sep 27 2021, 21:15:11) [MSC v.1929 64 bit (AMD64)]'
+11-20 16:55:41 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 314:KiCad build version: (6.0.0)
+11-20 16:55:41 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 315:Plugin version: 1.2.2
+11-20 16:55:41 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 316:Frame repr: <wx._core.Frame object at 0x00000291B36E2D30>
+11-20 16:55:41 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 340:Preparing replicator with U7 as a reference
+11-20 16:55:41 com_github_MitjaNemec_ReplicateLayout.replicate_layout 106:getting a list of all footprints on board
+11-20 16:55:41 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 364:source anchor footprint is 'U7'
+Located on: ['Amplifiers', 'I2S-AMP-2CH-A']
+With filenames: ['amplifiers.kicad_sch', 'I2S-AMP-2CH.kicad_sch']
+With sheet_id:['Amplifiers', 'I2S-AMP-2CH-A']
+11-20 16:55:41 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 371:Corresponding footprints are 
+[('U12', ['Amplifiers', 'I2S-AMP-2CH-B']), ('U10', ['Amplifiers', 'I2S-AMP-2CH-D']), ('U8', ['Amplifiers', 'I2S-AMP-2CH-C']), ('U7', ['Amplifiers', 'I2S-AMP-2CH-A'])]
+11-20 16:55:41 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 383:Showing dialog
+11-20 16:55:41 com_github_MitjaNemec_ReplicateLayout.replicate_layout 344:constructing a list of sheets suitable for replication on level:'I2S-AMP-2CH-A', file:'I2S-AMP-2CH.kicad_sch'
+11-20 16:55:41 com_github_MitjaNemec_ReplicateLayout.replicate_layout 381:suitable sheets are:[['Amplifiers', 'I2S-AMP-2CH-B'], ['Amplifiers', 'I2S-AMP-2CH-C'], ['Amplifiers', 'I2S-AMP-2CH-D']]
+11-20 16:55:41 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1112:Level selected: ['Amplifiers', 'I2S-AMP-2CH-A']
+11-20 16:55:41 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 389:Toolbar position: wx.Point(2338, 125)
+11-20 16:55:41 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 395:Dialog position: wx.Point(1974, 125)
+11-20 16:55:44 com_github_MitjaNemec_ReplicateLayout.replicate_layout 344:constructing a list of sheets suitable for replication on level:'I2S-AMP-2CH-A', file:'I2S-AMP-2CH.kicad_sch'
+11-20 16:55:44 com_github_MitjaNemec_ReplicateLayout.replicate_layout 381:suitable sheets are:[['Amplifiers', 'I2S-AMP-2CH-B'], ['Amplifiers', 'I2S-AMP-2CH-C'], ['Amplifiers', 'I2S-AMP-2CH-D']]
+11-20 16:55:44 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1112:Level selected: ['Amplifiers', 'I2S-AMP-2CH-A']
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 344:constructing a list of sheets suitable for replication on level:'I2S-AMP-2CH-A', file:'I2S-AMP-2CH.kicad_sch'
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 381:suitable sheets are:[['Amplifiers', 'I2S-AMP-2CH-B'], ['Amplifiers', 'I2S-AMP-2CH-C'], ['Amplifiers', 'I2S-AMP-2CH-D']]
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 170:Replicating layout
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 154:Starting replication of sheets: [['Amplifiers', 'I2S-AMP-2CH-B'], ['Amplifiers', 'I2S-AMP-2CH-C'], ['Amplifiers', 'I2S-AMP-2CH-D']]
+on level: ['Amplifiers', 'I2S-AMP-2CH-A']
+with tracks=True, zone=True, text=True, text=True, containing=False, remove=False, locked footprints=False, by_group=False
+11-20 16:55:52 root 252:updating GUI message: 'Preparing for replication'
+11-20 16:55:52 root 257:updating GUI with: 0
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 224:Getting the list of source footprints
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 239:Getting the list of all the remaining footprints
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 244:Getting nets local to source footprints
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 247:Getting source bounding box
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 251:Getting source tracks
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 266:Getting source zones
+11-20 16:55:52 root 257:updating GUI with: 62
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 275:Getting source text items
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 284:Getting source drawing items
+11-20 16:55:52 root 252:updating GUI message: 'Replicating footprints'
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 678:Replicating footprints
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 684:Replicating footprints on sheet ['Amplifiers', 'I2S-AMP-2CH-B']
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 684:Replicating footprints on sheet ['Amplifiers', 'I2S-AMP-2CH-C']
+11-20 16:55:52 root 257:updating GUI with: 55
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 684:Replicating footprints on sheet ['Amplifiers', 'I2S-AMP-2CH-D']
+11-20 16:55:52 root 252:updating GUI message: 'Replicating tracks'
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 844:Replicating tracks
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 850:Replicating tracks on sheet ['Amplifiers', 'I2S-AMP-2CH-B']
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 850:Replicating tracks on sheet ['Amplifiers', 'I2S-AMP-2CH-C']
+11-20 16:55:52 root 257:updating GUI with: 33
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 850:Replicating tracks on sheet ['Amplifiers', 'I2S-AMP-2CH-D']
+11-20 16:55:52 root 252:updating GUI message: 'Replicating zones'
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 909:Replicating zones
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 916:Replicating zones on sheet ['Amplifiers', 'I2S-AMP-2CH-B']
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 916:Replicating zones on sheet ['Amplifiers', 'I2S-AMP-2CH-C']
+11-20 16:55:52 root 257:updating GUI with: 36
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 916:Replicating zones on sheet ['Amplifiers', 'I2S-AMP-2CH-D']
+11-20 16:55:52 root 252:updating GUI message: 'Replicating text'
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 985:Replicating text
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 992:Replicating text on sheet ['Amplifiers', 'I2S-AMP-2CH-B']
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 992:Replicating text on sheet ['Amplifiers', 'I2S-AMP-2CH-C']
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 992:Replicating text on sheet ['Amplifiers', 'I2S-AMP-2CH-D']
+11-20 16:55:52 root 252:updating GUI message: 'Replicating drawings'
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1032:Replicating drawings
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1038:Replicating drawings on sheet ['Amplifiers', 'I2S-AMP-2CH-B']
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1038:Replicating drawings on sheet ['Amplifiers', 'I2S-AMP-2CH-C']
+11-20 16:55:52 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1038:Replicating drawings on sheet ['Amplifiers', 'I2S-AMP-2CH-D']
+11-20 16:55:53 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 190:Replication complete

@@ -4,4 +4,5 @@
   (lib (name "rpi_socket")(type "KiCad")(uri "${KIPRJMOD}/Library_rpi/rpi_socket.pretty")(options "")(descr ""))
   (lib (name "terminal_connectors")(type "KiCad")(uri "${KIPRJMOD}/Library_terminal_connectors/terminal_connectors.pretty")(options "")(descr ""))
   (lib (name "buffers")(type "KiCad")(uri "${KIPRJMOD}/Library_buffers/buffers.pretty")(options "")(descr ""))
+  (lib (name "TI-QFN")(type "KiCad")(uri "${KIPRJMOD}/Library_AMPx1/TI-QFN.pretty")(options "")(descr ""))
 )
