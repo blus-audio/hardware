@@ -1,8 +1,2 @@
 (sym_lib_table
-  (lib (name "tas5760")(type "KiCad")(uri "${KIPRJMOD}/Library_AMPx2/tas5760mdcar.kicad_sym")(options "")(descr ""))
-  (lib (name "buffers")(type "KiCad")(uri "${KIPRJMOD}/Library_buffers/buffers.kicad_sym")(options "")(descr ""))
-  (lib (name "dac")(type "KiCad")(uri "${KIPRJMOD}/Library_dac/dac.kicad_sym")(options "")(descr ""))
-  (lib (name "transformer_audio")(type "KiCad")(uri "${KIPRJMOD}/Library_transformer_audio/transformer_audio.kicad_sym")(options "")(descr ""))
-  (lib (name "tas2820")(type "KiCad")(uri "${KIPRJMOD}/Library_AMPx1/tas2820.kicad_sym")(options "")(descr ""))
-  (lib (name "connectors_debug")(type "KiCad")(uri "${KIPRJMOD}/Library_connectors_debug/connectors_debug.kicad_sym")(options "")(descr ""))
 )

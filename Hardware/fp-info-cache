@@ -1,4 +1,4 @@
-20954005193462998
+20955690529334101
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -7993,6 +7993,13 @@ THT Mini XLR 5Pin right angle
 0
 5
 5
+Connector_Audio_Custom
+cui_rcj_02x
+
+
+0
+3
+2
 Connector_BarrelJack
 BarrelJack_CLIFF_FC681465S_SMT_Horizontal
 Surface-mount DC Barrel Jack, https://www.cliffuk.co.uk/products/dcconnectors/FC681465S.pdf
@@ -8889,6 +8896,27 @@ DIN 41612 IEC 60603 R
 0
 96
 96
+Connector_Debug
+WR-WST REDFIT IDC 6
+
+
+0
+6
+6
+Connector_Debug
+WR-WST REDFIT IDC 6 DBG
+
+
+0
+6
+6
+Connector_Debug
+WR-WST REDFIT IDC 10
+
+
+0
+6
+6
 Connector_Dsub
 DSUB-9_Female_EdgeMount_P2.77mm
 9-pin D-Sub connector, solder-cups edge-mounted, female, x-pin-pitch 2.77mm, distance of mounting holes 25mm, see https://disti-assets.s3.amazonaws.com/tonar/files/datasheets/16730.pdf
@@ -42314,6 +42342,13 @@ lan magnetics transformer
 0
 14
 13
+Connector_Rpi
+PinSocket_2x20_P2.54mm_Vertical
+Through hole straight socket strip, 2x20, 2.54mm pitch, double cols (from Kicad 4.0.7), script generated
+Through hole socket strip THT 2x20 2.54mm double row
+0
+44
+41
 Connector_SATA_SAS
 SAS-mini_TEConnectivity_1888174_Vertical
 36pin mini SAS connector, http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1888174&DocType=Customer+Drawing&DocLang=English
@@ -45968,6 +46003,13 @@ connector TE MATE-N-LOK top entry ATA PATA IDE 5.25 inch floppy drive power
 0
 4
 4
+Connector_Terminal
+wuerth_691216410002
+
+
+0
+2
+2
 Connector_USB
 USB3_A_Molex_48393-001
 USB 3.0, type A, right angle (http://www.molex.com/pdm_docs/sd/483930003_sd.pdf)
@@ -73394,6 +73436,13 @@ Zetex SM8
 0
 8
 8
+Package_SOIC
+SOIC-16_3.9x9.9mm_Pitch1.27mm
+16-Lead Plastic Small Outline (SL) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)
+SOIC 1.27
+0
+16
+16
 Package_SON
 Diodes_PowerDI3333-8
 Diodes Incorporated PowerDI3333-8, Plastic Dual Flat No Lead Package, 3.3x3.3x0.8mm Body, https://www.diodes.com/assets/Package-Files/PowerDI3333-8.pdf
@@ -73926,6 +73975,13 @@ TSOC-6
 0
 6
 6
+Package_TI_QFN
+TI-30-Pin-HR-QFN
+
+
+0
+34
+30
 Package_TO_SOT_SMD
 ATPAK-2
 ATPAK SMD package, http://www.onsemi.com/pub/Collateral/ENA2192-D.PDF
@@ -81934,13 +81990,6 @@ Logo WEEE
 0
 0
 0
-TI-QFN
-TI-30-Pin-HR-QFN
-
-
-0
-34
-30
 TerminalBlock
 TerminalBlock_Altech_AK300-2_P5.00mm
 Altech AK300 terminal block, pitch 5.0mm, 45 degree angled, see http://www.mouser.com/ds/2/16/PCBMETRC-24178.pdf
@@ -86029,6 +86078,13 @@ test point THT pad
 0
 1
 1
+Transformer_Audio
+SOIC-6
+
+
+0
+6
+6
 Transformer_SMD
 Pulse_P0926NL
 SMT Gate Drive Transformer, 1:1:1, 8.0x6.3x5.3mm (https://productfinder.pulseeng.com/products/datasheets/SPM2007_61.pdf)
@@ -87531,55 +87587,6 @@ Varistor
 RV_Rect_V25S440P_L26.5mm_W8.2mm_P12.7mm
 Varistor, V25S440P, https://www.littelfuse.com/media?resourcetype=datasheets&itemid=b410c42c-51d1-460e-b1d9-d105d93c9679&filename=littelfuse-varistor-ultramov25s-datasheet
 varistor
-0
-2
-2
-buffers
-NXP_XSON-8
-
-
-0
-8
-8
-connectors_audio
-cui_rcj_02x
-
-
-0
-3
-2
-connectors_debug
-WR-WST REDFIT IDC 6
-
-
-0
-6
-6
-connectors_debug
-WR-WST REDFIT IDC 6 DBG
-
-
-0
-6
-6
-da100j
-SOIC-6
-
-
-0
-6
-6
-rpi_socket
-PinSocket_2x20_P2.54mm_Vertical
-Through hole straight socket strip, 2x20, 2.54mm pitch, double cols (from Kicad 4.0.7), script generated
-Through hole socket strip THT 2x20 2.54mm double row
-0
-44
-41
-terminal_connectors
-wuerth_691216410002
-
-
 0
 2
 2
