@@ -1,2 +1,0 @@
-- shutdown from stm32
-- shared data lines for amplifiers (4 slots)
