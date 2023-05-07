@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name "Connectors_Debug")(type "KiCad")(uri "${KIPRJMOD}/../../kicad-library/connectors_debug.kicad_sym")(options "")(descr ""))
+  (lib (name "Buffers")(type "KiCad")(uri "${KIPRJMOD}/../../kicad-library/buffers.kicad_sym")(options "")(descr ""))
+  (lib (name "Amplifiers_Audio_Switching")(type "KiCad")(uri "${KIPRJMOD}/../../kicad-library/amplifiers_audio_switching.kicad_sym")(options "")(descr ""))
+  (lib (name "Transformer_Audio")(type "KiCad")(uri "${KIPRJMOD}/../../kicad-library/transformer_audio.kicad_sym")(options "")(descr ""))
+)
