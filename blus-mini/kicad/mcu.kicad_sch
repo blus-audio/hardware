@@ -4,6 +4,13 @@
 
   (paper "A4")
 
+  (title_block
+    (title "blus mini")
+    (date "2023-05-08")
+    (rev "b")
+    (company "elagil")
+  )
+
   (lib_symbols
     (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
       (property "Reference" "TP" (id 0) (at 0 6.858 0)
@@ -1822,10 +1829,13 @@
     (property "Value" "NRST" (id 1) (at 215.9 57.1499 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Button_Switch_SMD:SW_SPST_PTS810" (id 2) (at 214.63 55.88 0)
+    (property "Footprint" "Button_Switch_SMD:SW_SPST_TL3342" (id 2) (at 214.63 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 214.63 55.88 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MPN" "C318884" (id 4) (at 214.63 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8b1301d4-ad8b-41e8-9755-0c991277f5ee))
@@ -1911,10 +1921,13 @@
     (property "Value" "BOOT" (id 1) (at 191.77 41.91 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Button_Switch_SMD:SW_SPST_PTS810" (id 2) (at 203.2 40.64 0)
+    (property "Footprint" "Button_Switch_SMD:SW_SPST_TL3342" (id 2) (at 203.2 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 203.2 40.64 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MPN" "C318884" (id 4) (at 203.2 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 509cd023-f62e-4653-bac0-b5603ff0ea34))

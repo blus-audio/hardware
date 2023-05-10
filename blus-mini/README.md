@@ -1,6 +1,9 @@
 # Blus mini
 
 This small amplifier is ideally suited for stereo pairs of two-way speakers.
+With two connected amplifier boards, you can power four drivers per side.
+
+![front](./kicad/front.png)
 
 Find [SigmaStudio template files](./sigma_studio/) for setting up the amplifier for different speaker combinations, as well as the [hardware design files](./kicad/) for reference.
 
@@ -13,3 +16,7 @@ Find [SigmaStudio template files](./sigma_studio/) for setting up the amplifier 
 - S/PDIF input and output
 - Auxiliary I2S input and output
 - Full 32 bit digital audio chain with analog conversion only in the amplifiers
+
+## State of development
+
+This amplifier board is not yet fully tested. Do not build before a release.

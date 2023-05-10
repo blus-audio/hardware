@@ -5,9 +5,10 @@
   (paper "A4")
 
   (title_block
-    (title "AMP")
-    (date "2021-03-30")
-    (rev "V0.1")
+    (title "blus mini")
+    (date "2023-05-08")
+    (rev "b")
+    (company "elagil")
   )
 
   (lib_symbols
