@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "blus mini mk2")
-		(date "2024-04-05")
+		(date "2024-06-04")
 		(rev "a")
 		(company "elagil")
 	)
@@ -562,9 +562,6 @@
 			)
 		)
 		(symbol "Regulator_Linear:AMS1117-3.3"
-			(pin_names
-				(offset 0.254)
-			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -894,9 +891,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -970,8 +967,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -988,11 +985,107 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "power:VPP"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1006,7 +1099,7 @@
 				)
 			)
 			(property "Value" "VPP"
-				(at 0 3.81 0)
+				(at 0 3.556 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1090,8 +1183,8 @@
 			(symbol "VPP_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "VPP"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1108,6 +1201,12 @@
 				)
 			)
 		)
+	)
+	(junction
+		(at 96.52 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "041f9e13-a4b1-4dbc-bb16-ed50dd9a5a2c")
 	)
 	(junction
 		(at 74.93 49.53)
@@ -1144,6 +1243,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8083e3d2-0fd6-4767-b27d-37e8c81834c1")
+	)
+	(junction
+		(at 210.82 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86ad13db-1c3b-444f-ae6f-2c8c5d5fe601")
 	)
 	(junction
 		(at 196.85 69.85)
@@ -1323,6 +1428,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 92.71) (xy 245.11 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f10bc73-6822-4ff1-b588-662efb9b3306")
+	)
+	(wire
+		(pts
 			(xy 87.63 82.55) (xy 87.63 83.82)
 		)
 		(stroke
@@ -1353,16 +1468,6 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 92.71) (xy 232.41 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60530271-1a32-4dc7-ab5d-4bf62c456551")
-	)
-	(wire
-		(pts
 			(xy 87.63 59.69) (xy 87.63 60.96)
 		)
 		(stroke
@@ -1390,6 +1495,26 @@
 			(type default)
 		)
 		(uuid "718cb168-53a9-4a41-92ae-25c194d7a425")
+	)
+	(wire
+		(pts
+			(xy 96.52 48.26) (xy 96.52 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "762e72c4-8b53-4731-8c8e-1a572ea1e182")
+	)
+	(wire
+		(pts
+			(xy 210.82 57.15) (xy 210.82 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "791e4c22-08b0-4877-ba0c-346468ec1072")
 	)
 	(wire
 		(pts
@@ -1523,7 +1648,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 69.85) (xy 232.41 69.85)
+			(xy 228.6 69.85) (xy 245.11 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1633,7 +1758,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 58.42) (xy 210.82 58.42)
+			(xy 245.11 58.42) (xy 210.82 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1788,7 +1913,7 @@
 	)
 	(hierarchical_label "VOUT_1V8"
 		(shape output)
-		(at 232.41 92.71 0)
+		(at 245.11 92.71 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1800,7 +1925,7 @@
 	)
 	(hierarchical_label "VOUT_3V3"
 		(shape output)
-		(at 232.41 69.85 0)
+		(at 245.11 69.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1812,7 +1937,7 @@
 	)
 	(hierarchical_label "VOUT_5V0"
 		(shape output)
-		(at 232.41 58.42 0)
+		(at 245.11 58.42 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1831,7 +1956,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "07be4140-16fa-41b3-ae56-e190f5d15cb4")
-		(property "Reference" "#PWR0118"
+		(property "Reference" "#PWR0103"
 			(at 160.02 87.63 0)
 			(effects
 				(font
@@ -1866,7 +1991,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 160.02 81.28 0)
 			(effects
 				(font
@@ -1881,7 +2006,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "#PWR0118")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -1930,7 +2055,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Inductor"
 			(at 140.97 69.85 0)
 			(effects
 				(font
@@ -1940,6 +2065,15 @@
 			)
 		)
 		(property "Mfr.Nr." "DK"
+			(at 140.97 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C167220"
 			(at 140.97 69.85 0)
 			(effects
 				(font
@@ -1972,7 +2106,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2387bbdc-7777-4582-847c-6f042232b6a3")
-		(property "Reference" "#PWR0113"
+		(property "Reference" "#PWR099"
 			(at 62.23 66.04 0)
 			(effects
 				(font
@@ -2007,7 +2141,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 62.23 59.69 0)
 			(effects
 				(font
@@ -2022,7 +2156,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "#PWR0113")
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)
@@ -2037,7 +2171,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "251d1ed3-a1ee-4649-8f2b-f5680edcb2fd")
-		(property "Reference" "R13"
+		(property "Reference" "R37"
 			(at 198.628 83.9216 0)
 			(effects
 				(font
@@ -2073,7 +2207,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 196.85 85.09 0)
 			(effects
 				(font
@@ -2100,7 +2234,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "R13")
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -2115,7 +2249,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "30e036c1-c74f-4795-af5c-4cdff160135b")
-		(property "Reference" "C59"
+		(property "Reference" "C69"
 			(at 150.241 75.0316 0)
 			(effects
 				(font
@@ -2151,7 +2285,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 147.32 76.2 0)
 			(effects
 				(font
@@ -2187,7 +2321,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "C59")
+					(reference "C69")
 					(unit 1)
 				)
 			)
@@ -2202,7 +2336,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3477bb27-b34a-4f1d-963e-a1d8d7dcd1ed")
-		(property "Reference" "C58"
+		(property "Reference" "C70"
 			(at 162.941 75.0316 0)
 			(effects
 				(font
@@ -2238,7 +2372,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 160.02 76.2 0)
 			(effects
 				(font
@@ -2274,7 +2408,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "C58")
+					(reference "C70")
 					(unit 1)
 				)
 			)
@@ -2289,7 +2423,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3a9f6c93-e498-4f7f-ace1-3220a8434384")
-		(property "Reference" "C55"
+		(property "Reference" "C68"
 			(at 128.651 62.3316 0)
 			(effects
 				(font
@@ -2325,7 +2459,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 125.73 63.5 0)
 			(effects
 				(font
@@ -2361,7 +2495,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "C55")
+					(reference "C68")
 					(unit 1)
 				)
 			)
@@ -2376,7 +2510,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3ef84939-5b32-474d-8d64-931704b06daf")
-		(property "Reference" "#PWR0112"
+		(property "Reference" "#PWR098"
 			(at 55.88 52.07 0)
 			(effects
 				(font
@@ -2411,7 +2545,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"VPP\""
 			(at 55.88 48.26 0)
 			(effects
 				(font
@@ -2426,7 +2560,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "#PWR0112")
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -2442,7 +2576,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "468c1cee-7997-4701-9d64-e9f7566eb726")
-		(property "Reference" "U10"
+		(property "Reference" "U11"
 			(at 220.98 86.36 0)
 			(effects
 				(font
@@ -2485,6 +2619,24 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB Rotation Offset" ""
+			(at 220.98 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C6185"
+			(at 220.98 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "9cff6006-758f-4507-bb70-5bed10129ecb")
 		)
@@ -2497,7 +2649,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "U10")
+					(reference "U11")
 					(unit 1)
 				)
 			)
@@ -2512,7 +2664,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4f873929-5a38-4f15-8359-0d76c53b312f")
-		(property "Reference" "C54"
+		(property "Reference" "C66"
 			(at 65.151 53.4416 0)
 			(effects
 				(font
@@ -2548,7 +2700,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 62.23 54.61 0)
 			(effects
 				(font
@@ -2584,7 +2736,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "C54")
+					(reference "C66")
 					(unit 1)
 				)
 			)
@@ -2600,7 +2752,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "59637115-9760-4d8b-be2d-3c1ca2a7ae8e")
-		(property "Reference" "U7"
+		(property "Reference" "U9"
 			(at 113.03 59.69 0)
 			(effects
 				(font
@@ -2635,7 +2787,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "3A, 4.5 to 28V Input, EMI Friendly integrated switch synchronous step-down regulator, pulse-skipping, SOT-23-6"
 			(at 113.03 69.85 0)
 			(effects
 				(font
@@ -2653,11 +2805,20 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "JLCPCB Rotation Offset" "-90"
 			(at 113.03 69.85 0)
 			(effects
 				(font
 					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C311983"
+			(at 113.03 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -2683,7 +2844,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "U7")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -2698,7 +2859,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5aa02f68-ef79-4523-bea3-f08cccfdc26a")
-		(property "Reference" "C57"
+		(property "Reference" "C71"
 			(at 174.371 75.0316 0)
 			(effects
 				(font
@@ -2734,7 +2895,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 171.45 76.2 0)
 			(effects
 				(font
@@ -2770,7 +2931,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "C57")
+					(reference "C71")
 					(unit 1)
 				)
 			)
@@ -2785,7 +2946,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5b1134d1-ab5f-48fa-b527-ffdc1b4c5ff5")
-		(property "Reference" "#PWR0120"
+		(property "Reference" "#PWR0105"
 			(at 184.15 87.63 0)
 			(effects
 				(font
@@ -2820,7 +2981,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 184.15 81.28 0)
 			(effects
 				(font
@@ -2835,7 +2996,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "#PWR0120")
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
@@ -2850,7 +3011,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "60844667-e45a-49e4-8967-803b66d26bff")
-		(property "Reference" "#PWR0119"
+		(property "Reference" "#PWR0104"
 			(at 171.45 87.63 0)
 			(effects
 				(font
@@ -2885,7 +3046,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 171.45 81.28 0)
 			(effects
 				(font
@@ -2900,7 +3061,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "#PWR0119")
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -2915,7 +3076,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7da78f7c-c98e-4054-b5e1-5f02d2809e4c")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR0109"
 			(at 220.98 107.95 0)
 			(effects
 				(font
@@ -2950,7 +3111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 220.98 101.6 0)
 			(effects
 				(font
@@ -2965,7 +3126,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "#PWR06")
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -2980,7 +3141,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "88be73e5-dc61-4ce7-af15-fe88fc0387f1")
-		(property "Reference" "R14"
+		(property "Reference" "R35"
 			(at 198.628 73.7616 0)
 			(effects
 				(font
@@ -3016,7 +3177,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 196.85 74.93 0)
 			(effects
 				(font
@@ -3052,7 +3213,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "R14")
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -3067,7 +3228,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9396f9fd-a06e-4ae3-a3dc-70a273dc2ed3")
-		(property "Reference" "U5"
+		(property "Reference" "U10"
 			(at 220.98 63.7032 0)
 			(effects
 				(font
@@ -3101,7 +3262,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
 			(at 220.98 69.85 0)
 			(effects
 				(font
@@ -3128,7 +3289,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Rotation Offset" "180"
+		(property "JLCPCB Rotation Offset" ""
 			(at 220.98 69.85 0)
 			(effects
 				(font
@@ -3149,7 +3310,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "U5")
+					(reference "U10")
 					(unit 1)
 				)
 			)
@@ -3164,7 +3325,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9e881803-558c-4d6c-bd51-69c7e0018475")
-		(property "Reference" "R12"
+		(property "Reference" "R33"
 			(at 92.8878 55.88 90)
 			(effects
 				(font
@@ -3198,7 +3359,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 87.63 55.88 0)
 			(effects
 				(font
@@ -3234,7 +3395,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "R12")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -3249,7 +3410,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aa3a0060-76c9-4069-9e57-442ad024706f")
-		(property "Reference" "C56"
+		(property "Reference" "C72"
 			(at 187.071 75.0316 0)
 			(effects
 				(font
@@ -3285,7 +3446,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 184.15 76.2 0)
 			(effects
 				(font
@@ -3321,7 +3482,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "C56")
+					(reference "C72")
 					(unit 1)
 				)
 			)
@@ -3336,7 +3497,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b37b3840-d556-4b7e-b34b-56fed5fbed80")
-		(property "Reference" "#PWR0117"
+		(property "Reference" "#PWR0102"
 			(at 147.32 87.63 0)
 			(effects
 				(font
@@ -3371,7 +3532,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 147.32 81.28 0)
 			(effects
 				(font
@@ -3386,7 +3547,73 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "#PWR0117")
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 96.52 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b72158a7-0c76-48cb-b593-70f70f79d05a")
+		(property "Reference" "#FLG01"
+			(at 96.52 46.355 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 96.52 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 96.52 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8f4009ef-3628-4fd1-bd7b-4fe3851ddc55")
+		)
+		(instances
+			(project "blus-mini-mk2"
+				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -3401,7 +3628,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bb1b006d-74e1-4679-b29e-12c6e7cde2ce")
-		(property "Reference" "#PWR0114"
+		(property "Reference" "#PWR0100"
 			(at 74.93 66.04 0)
 			(effects
 				(font
@@ -3436,7 +3663,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 74.93 59.69 0)
 			(effects
 				(font
@@ -3451,7 +3678,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "#PWR0114")
+					(reference "#PWR0100")
 					(unit 1)
 				)
 			)
@@ -3466,7 +3693,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bd21b20e-edb6-48e5-9d3d-51af3ff3f3b9")
-		(property "Reference" "R11"
+		(property "Reference" "R34"
 			(at 92.8878 64.77 90)
 			(effects
 				(font
@@ -3500,7 +3727,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 87.63 64.77 0)
 			(effects
 				(font
@@ -3536,7 +3763,73 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "R11")
+					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 210.82 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c238e6ef-5fb2-41e7-9c01-f95fafc858cc")
+		(property "Reference" "#FLG02"
+			(at 210.82 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 210.82 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.82 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 210.82 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "90b48fc4-7e32-4714-8c90-a4a57829e04e")
+		)
+		(instances
+			(project "blus-mini-mk2"
+				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -3551,7 +3844,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dc0cade4-25eb-478f-9d6a-8636e79ac728")
-		(property "Reference" "C53"
+		(property "Reference" "C67"
 			(at 77.851 53.4416 0)
 			(effects
 				(font
@@ -3587,7 +3880,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 74.93 54.61 0)
 			(effects
 				(font
@@ -3623,7 +3916,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "C53")
+					(reference "C67")
 					(unit 1)
 				)
 			)
@@ -3638,7 +3931,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eb993c97-7355-4de4-a9db-eb29ed617c16")
-		(property "Reference" "#PWR0122"
+		(property "Reference" "#PWR0101"
 			(at 220.98 85.09 0)
 			(effects
 				(font
@@ -3673,7 +3966,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 220.98 78.74 0)
 			(effects
 				(font
@@ -3688,7 +3981,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "#PWR0122")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -3703,7 +3996,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "efc2b3e6-322f-4e9b-8712-7c9bf9ec8455")
-		(property "Reference" "#PWR0115"
+		(property "Reference" "#PWR0106"
 			(at 87.63 90.17 0)
 			(effects
 				(font
@@ -3738,7 +4031,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 87.63 83.82 0)
 			(effects
 				(font
@@ -3753,7 +4046,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "#PWR0115")
+					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
@@ -3768,7 +4061,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fa6610b3-9c75-46c2-8f5d-b94a1914f224")
-		(property "Reference" "#PWR0121"
+		(property "Reference" "#PWR0108"
 			(at 196.85 96.52 0)
 			(effects
 				(font
@@ -3803,7 +4096,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 196.85 90.17 0)
 			(effects
 				(font
@@ -3818,7 +4111,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "#PWR0121")
+					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
@@ -3833,7 +4126,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fa82f96c-c66b-4803-834e-e08ae13e3d59")
-		(property "Reference" "R10"
+		(property "Reference" "R36"
 			(at 92.8878 78.74 90)
 			(effects
 				(font
@@ -3867,7 +4160,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 87.63 78.74 0)
 			(effects
 				(font
@@ -3903,7 +4196,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "R10")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -3918,7 +4211,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fe13173b-9e58-4bd5-8df0-f3195612501f")
-		(property "Reference" "#PWR0116"
+		(property "Reference" "#PWR0107"
 			(at 113.03 90.17 0)
 			(effects
 				(font
@@ -3953,7 +4246,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 113.03 83.82 0)
 			(effects
 				(font
@@ -3968,7 +4261,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/1890166f-9092-4cb1-8493-30a7e09f0b98"
-					(reference "#PWR0116")
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)

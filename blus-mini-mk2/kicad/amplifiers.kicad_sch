@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "blus mini mk2")
-		(date "2024-04-05")
+		(date "2024-06-04")
 		(rev "a")
 		(company "elagil")
 	)
@@ -321,9 +321,9 @@
 		)
 		(symbol "power:+1V8"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -421,8 +421,8 @@
 			(symbol "+1V8_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+1V8"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -441,9 +441,9 @@
 		)
 		(symbol "power:+3.3V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -541,8 +541,8 @@
 			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3.3V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -561,9 +561,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -637,8 +637,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -975,6 +975,16 @@
 			(type default)
 		)
 		(uuid "884ef0d0-7c79-4c99-8e88-e169912de5ef")
+	)
+	(wire
+		(pts
+			(xy 57.15 54.61) (xy 68.58 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f348fe1-e413-4364-bf1e-07ecd1c6412a")
 	)
 	(wire
 		(pts
@@ -1343,7 +1353,7 @@
 		)
 		(uuid "09ca45cf-74fe-4ef0-9228-da0bdc333787")
 	)
-	(label "LRCKA"
+	(label "TDM_FS"
 		(at 68.58 36.83 180)
 		(fields_autoplaced yes)
 		(effects
@@ -1376,7 +1386,7 @@
 		)
 		(uuid "1073d06e-8e83-4597-bc2d-74d15439caf4")
 	)
-	(label "SCLKA"
+	(label "TDM_SCK"
 		(at 87.63 172.72 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1398,7 +1408,7 @@
 		)
 		(uuid "1616a7a5-2610-4b25-893a-51345f6d2656")
 	)
-	(label "SDINA"
+	(label "TDM_SDI"
 		(at 87.63 132.08 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1409,7 +1419,7 @@
 		)
 		(uuid "1fdf1e1a-6d09-4459-8222-fb79d84551e5")
 	)
-	(label "SDINA"
+	(label "TDM_SDI"
 		(at 87.63 45.72 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1442,7 +1452,7 @@
 		)
 		(uuid "26fa4777-1ac7-475d-bee9-86c6f50149f7")
 	)
-	(label "NSPK_SD"
+	(label "~{SPK_SD}"
 		(at 87.63 139.7 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1464,7 +1474,7 @@
 		)
 		(uuid "2957ea71-c16c-4206-bccb-a15625f6f2b1")
 	)
-	(label "LRCKA"
+	(label "TDM_FS"
 		(at 87.63 40.64 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1475,7 +1485,7 @@
 		)
 		(uuid "324e2520-1020-4883-9290-f3ece177cfe5")
 	)
-	(label "SDINA"
+	(label "TDM_SDI"
 		(at 87.63 175.26 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1530,7 +1540,7 @@
 		)
 		(uuid "70477e8c-c9b3-4605-ba97-ce6f53c64449")
 	)
-	(label "SCLKA"
+	(label "TDM_SCK"
 		(at 87.63 129.54 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1552,7 +1562,7 @@
 		)
 		(uuid "7a82aa82-515e-4bed-ac74-a19541b5d662")
 	)
-	(label "NSPK_SD"
+	(label "~{SPK_SD}"
 		(at 87.63 96.52 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1563,7 +1573,7 @@
 		)
 		(uuid "7d099627-12f2-4b2f-a2be-6d9f6f95e7aa")
 	)
-	(label "NSPK_SD"
+	(label "~{SPK_SD}"
 		(at 87.63 182.88 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1574,7 +1584,7 @@
 		)
 		(uuid "859a95fa-55c3-48d0-9236-9921f03ab219")
 	)
-	(label "LRCKA"
+	(label "TDM_FS"
 		(at 87.63 83.82 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1596,7 +1606,7 @@
 		)
 		(uuid "89ee8e1b-7454-4b5f-bf99-b44f3aa53232")
 	)
-	(label "NSPK_SD"
+	(label "~{SPK_SD}"
 		(at 68.58 52.07 180)
 		(fields_autoplaced yes)
 		(effects
@@ -1618,7 +1628,7 @@
 		)
 		(uuid "9c0d6e15-6481-41bd-9ba8-cb2c90982a47")
 	)
-	(label "SDINA"
+	(label "TDM_SDI"
 		(at 87.63 88.9 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1651,7 +1661,7 @@
 		)
 		(uuid "b39676a3-4e20-49cd-967f-3d8f27153114")
 	)
-	(label "SDINA"
+	(label "TDM_SDI"
 		(at 68.58 41.91 180)
 		(fields_autoplaced yes)
 		(effects
@@ -1661,6 +1671,17 @@
 			(justify right bottom)
 		)
 		(uuid "b48586c2-7b70-4d39-a7a1-18187ceed66c")
+	)
+	(label "IRQZ"
+		(at 68.58 54.61 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right bottom)
+		)
+		(uuid "ba56d143-d200-4f85-9275-6345b01a9369")
 	)
 	(label "IRQZ"
 		(at 151.13 135.89 180)
@@ -1673,7 +1694,7 @@
 		)
 		(uuid "bdc1efb5-42d2-4e72-8718-c7952708db01")
 	)
-	(label "SCLKA"
+	(label "TDM_SCK"
 		(at 87.63 43.18 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1728,7 +1749,7 @@
 		)
 		(uuid "d51222c0-5104-44c6-bfb0-fb23bf3aecf6")
 	)
-	(label "SCLKA"
+	(label "TDM_SCK"
 		(at 68.58 39.37 180)
 		(fields_autoplaced yes)
 		(effects
@@ -1750,7 +1771,7 @@
 		)
 		(uuid "e0491888-cb55-4732-82ef-96dac1a40ee1")
 	)
-	(label "LRCKA"
+	(label "TDM_FS"
 		(at 87.63 170.18 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1761,7 +1782,7 @@
 		)
 		(uuid "e149dd0b-ef75-4d2c-9f54-57b949ee30fe")
 	)
-	(label "NSPK_SD"
+	(label "~{SPK_SD}"
 		(at 87.63 53.34 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1794,7 +1815,7 @@
 		)
 		(uuid "f154433e-39e2-4b9a-a7cc-cedcebbc2a8a")
 	)
-	(label "SCLKA"
+	(label "TDM_SCK"
 		(at 87.63 86.36 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1816,7 +1837,7 @@
 		)
 		(uuid "f74135c1-29fc-4e39-b3af-3c7212b032e5")
 	)
-	(label "LRCKA"
+	(label "TDM_FS"
 		(at 87.63 127 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1838,6 +1859,18 @@
 		)
 		(uuid "fee8ab66-ea85-4081-ba4f-23173ab5e873")
 	)
+	(hierarchical_label "IRQZ"
+		(shape output)
+		(at 57.15 54.61 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right)
+		)
+		(uuid "0dc4f7cb-e4c6-4250-a59e-447053dc0367")
+	)
 	(hierarchical_label "SDA"
 		(shape bidirectional)
 		(at 57.15 46.99 180)
@@ -1850,7 +1883,7 @@
 		)
 		(uuid "11e09804-acbe-4ee1-b78c-8ce5dd6f99a4")
 	)
-	(hierarchical_label "LRCKA"
+	(hierarchical_label "TDM_FS"
 		(shape input)
 		(at 57.15 36.83 180)
 		(fields_autoplaced yes)
@@ -1862,7 +1895,7 @@
 		)
 		(uuid "34f4969a-4823-46ec-9c78-5a30760fe4af")
 	)
-	(hierarchical_label "NSPK_SD"
+	(hierarchical_label "~{SPK_SD}"
 		(shape input)
 		(at 57.15 52.07 180)
 		(fields_autoplaced yes)
@@ -1874,7 +1907,7 @@
 		)
 		(uuid "57cdab21-bf3d-4cc2-974e-1e9285805b0b")
 	)
-	(hierarchical_label "SDINA"
+	(hierarchical_label "TDM_SDI"
 		(shape input)
 		(at 57.15 41.91 180)
 		(fields_autoplaced yes)
@@ -1898,7 +1931,7 @@
 		)
 		(uuid "7d19e007-9206-460c-9449-f3181c8532d6")
 	)
-	(hierarchical_label "SCLKA"
+	(hierarchical_label "TDM_SCK"
 		(shape input)
 		(at 57.15 39.37 180)
 		(fields_autoplaced yes)
@@ -1919,7 +1952,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "15e64719-be55-4db9-8c7a-a38568bc45c1")
-		(property "Reference" "#PWR0128"
+		(property "Reference" "#PWR0110"
 			(at 210.82 31.75 0)
 			(effects
 				(font
@@ -1954,7 +1987,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 210.82 27.94 0)
 			(effects
 				(font
@@ -1969,7 +2002,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/28d9c86f-ab2e-46a2-91e9-d45c369143ce"
-					(reference "#PWR0128")
+					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -1985,7 +2018,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1e63d159-a08a-443a-9fec-75c3c939d0b8")
-		(property "Reference" "J7"
+		(property "Reference" "J10"
 			(at 149.352 124.2568 0)
 			(effects
 				(font
@@ -2021,7 +2054,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 147.32 124.46 0)
 			(effects
 				(font
@@ -2048,7 +2081,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/28d9c86f-ab2e-46a2-91e9-d45c369143ce"
-					(reference "J7")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -2063,7 +2096,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "217007ee-6d4a-4954-8b99-c02b6a27d264")
-		(property "Reference" "R9"
+		(property "Reference" "R39"
 			(at 195.58 44.2722 90)
 			(effects
 				(font
@@ -2097,7 +2130,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 195.58 49.53 0)
 			(effects
 				(font
@@ -2133,7 +2166,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/28d9c86f-ab2e-46a2-91e9-d45c369143ce"
-					(reference "R9")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -2148,7 +2181,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "25e91e8d-c83a-4eee-ab38-2cfa99e3f198")
-		(property "Reference" "#PWR0124"
+		(property "Reference" "#PWR0111"
 			(at 208.28 49.53 0)
 			(effects
 				(font
@@ -2183,7 +2216,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 201.93 49.53 0)
 			(effects
 				(font
@@ -2198,7 +2231,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/28d9c86f-ab2e-46a2-91e9-d45c369143ce"
-					(reference "#PWR0124")
+					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
@@ -2214,7 +2247,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e00129f-7a68-436c-97b5-3054dccac0ca")
-		(property "Reference" "#PWR0125"
+		(property "Reference" "#PWR0112"
 			(at 198.12 58.42 0)
 			(effects
 				(font
@@ -2249,7 +2282,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+1V8\""
 			(at 201.93 58.42 0)
 			(effects
 				(font
@@ -2264,7 +2297,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/28d9c86f-ab2e-46a2-91e9-d45c369143ce"
-					(reference "#PWR0125")
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -2280,7 +2313,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4bb27e00-d1b0-4563-8787-92c093712a32")
-		(property "Reference" "J8"
+		(property "Reference" "J11"
 			(at 149.352 167.4368 0)
 			(effects
 				(font
@@ -2316,7 +2349,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 147.32 167.64 0)
 			(effects
 				(font
@@ -2343,7 +2376,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/28d9c86f-ab2e-46a2-91e9-d45c369143ce"
-					(reference "J8")
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -2359,7 +2392,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6c99aca0-5bbf-4cf9-bdf4-ba5db26d93e3")
-		(property "Reference" "#PWR0127"
+		(property "Reference" "#PWR0114"
 			(at 198.12 76.2 0)
 			(effects
 				(font
@@ -2394,7 +2427,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+1V8\""
 			(at 201.93 76.2 0)
 			(effects
 				(font
@@ -2409,7 +2442,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/28d9c86f-ab2e-46a2-91e9-d45c369143ce"
-					(reference "#PWR0127")
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
@@ -2424,7 +2457,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "72cce66b-d3e9-407d-acc8-daa8ac050a21")
-		(property "Reference" "R6"
+		(property "Reference" "R42"
 			(at 195.58 70.9422 90)
 			(effects
 				(font
@@ -2458,7 +2491,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 195.58 76.2 0)
 			(effects
 				(font
@@ -2494,7 +2527,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/28d9c86f-ab2e-46a2-91e9-d45c369143ce"
-					(reference "R6")
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -2509,7 +2542,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a1c4dc40-7f71-4215-adf1-a2e7f360c532")
-		(property "Reference" "R7"
+		(property "Reference" "R41"
 			(at 195.58 62.0522 90)
 			(effects
 				(font
@@ -2543,7 +2576,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 195.58 67.31 0)
 			(effects
 				(font
@@ -2579,7 +2612,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/28d9c86f-ab2e-46a2-91e9-d45c369143ce"
-					(reference "R7")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -2594,7 +2627,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b2879eb5-2abc-42e1-9741-f8998cebe5ba")
-		(property "Reference" "R8"
+		(property "Reference" "R40"
 			(at 195.58 53.1622 90)
 			(effects
 				(font
@@ -2628,7 +2661,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 195.58 58.42 0)
 			(effects
 				(font
@@ -2664,7 +2697,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/28d9c86f-ab2e-46a2-91e9-d45c369143ce"
-					(reference "R8")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -2680,7 +2713,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b9f7df4a-9d72-489a-94c4-4e4eef560492")
-		(property "Reference" "J5"
+		(property "Reference" "J8"
 			(at 149.352 37.8968 0)
 			(effects
 				(font
@@ -2716,7 +2749,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 147.32 38.1 0)
 			(effects
 				(font
@@ -2743,7 +2776,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/28d9c86f-ab2e-46a2-91e9-d45c369143ce"
-					(reference "J5")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -2759,7 +2792,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c6ac2703-90fa-411e-ae67-0014f2573b21")
-		(property "Reference" "J6"
+		(property "Reference" "J9"
 			(at 149.352 81.0768 0)
 			(effects
 				(font
@@ -2795,7 +2828,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 147.32 81.28 0)
 			(effects
 				(font
@@ -2822,7 +2855,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/28d9c86f-ab2e-46a2-91e9-d45c369143ce"
-					(reference "J6")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -2837,7 +2870,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dfc5d7b4-589f-4c9d-ab1c-cd494d22cc48")
-		(property "Reference" "R5"
+		(property "Reference" "R38"
 			(at 216.0778 33.02 90)
 			(effects
 				(font
@@ -2871,7 +2904,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 210.82 33.02 0)
 			(effects
 				(font
@@ -2907,7 +2940,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/28d9c86f-ab2e-46a2-91e9-d45c369143ce"
-					(reference "R5")
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -2922,7 +2955,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "effa04e8-d91e-43d0-872b-e8a736a9b2b8")
-		(property "Reference" "#PWR0126"
+		(property "Reference" "#PWR0113"
 			(at 208.28 67.31 0)
 			(effects
 				(font
@@ -2957,7 +2990,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 201.93 67.31 0)
 			(effects
 				(font
@@ -2972,7 +3005,7 @@
 		(instances
 			(project "blus-mini-mk2"
 				(path "/576f00e6-a1be-45d3-9b93-e26d9e0fe306/28d9c86f-ab2e-46a2-91e9-d45c369143ce"
-					(reference "#PWR0126")
+					(reference "#PWR0113")
 					(unit 1)
 				)
 			)
@@ -3008,7 +3041,7 @@
 				(justify left top)
 			)
 		)
-		(pin "NSPK_SD" input
+		(pin "~{SPK_SD}" input
 			(at 105.41 182.88 180)
 			(effects
 				(font
@@ -3018,7 +3051,7 @@
 			)
 			(uuid "2e4f5be4-837d-4945-bbcc-d278b6c25626")
 		)
-		(pin "LRCK" input
+		(pin "TDM_FS" input
 			(at 105.41 170.18 180)
 			(effects
 				(font
@@ -3028,7 +3061,7 @@
 			)
 			(uuid "cde024fc-37c5-4080-9d3c-d9c7a8ccbdab")
 		)
-		(pin "SDIN" input
+		(pin "TDM_SDI" input
 			(at 105.41 175.26 180)
 			(effects
 				(font
@@ -3038,7 +3071,7 @@
 			)
 			(uuid "1692af15-9f8b-4985-8df6-e661dde2513c")
 		)
-		(pin "SCLK" input
+		(pin "TDM_SCK" input
 			(at 105.41 172.72 180)
 			(effects
 				(font
@@ -3156,7 +3189,7 @@
 				(justify left top)
 			)
 		)
-		(pin "NSPK_SD" input
+		(pin "~{SPK_SD}" input
 			(at 105.41 53.34 180)
 			(effects
 				(font
@@ -3166,7 +3199,7 @@
 			)
 			(uuid "dd5117c9-3479-43cd-a8b2-71eee8ae7881")
 		)
-		(pin "LRCK" input
+		(pin "TDM_FS" input
 			(at 105.41 40.64 180)
 			(effects
 				(font
@@ -3176,7 +3209,7 @@
 			)
 			(uuid "b8b59fdc-eee8-443a-9961-d60c5b9be025")
 		)
-		(pin "SDIN" input
+		(pin "TDM_SDI" input
 			(at 105.41 45.72 180)
 			(effects
 				(font
@@ -3186,7 +3219,7 @@
 			)
 			(uuid "ac06960b-f97e-49d0-87e5-4454d5bf067c")
 		)
-		(pin "SCLK" input
+		(pin "TDM_SCK" input
 			(at 105.41 43.18 180)
 			(effects
 				(font
@@ -3304,7 +3337,7 @@
 				(justify left top)
 			)
 		)
-		(pin "NSPK_SD" input
+		(pin "~{SPK_SD}" input
 			(at 105.41 139.7 180)
 			(effects
 				(font
@@ -3314,7 +3347,7 @@
 			)
 			(uuid "fefdd6c8-1f1c-40ac-9acf-1a6478e8b10f")
 		)
-		(pin "LRCK" input
+		(pin "TDM_FS" input
 			(at 105.41 127 180)
 			(effects
 				(font
@@ -3324,7 +3357,7 @@
 			)
 			(uuid "a4d6e997-831b-4ca5-b6f0-cd20679ea96d")
 		)
-		(pin "SDIN" input
+		(pin "TDM_SDI" input
 			(at 105.41 132.08 180)
 			(effects
 				(font
@@ -3334,7 +3367,7 @@
 			)
 			(uuid "931a39b5-c454-4f03-ab7a-0bc40244e7d0")
 		)
-		(pin "SCLK" input
+		(pin "TDM_SCK" input
 			(at 105.41 129.54 180)
 			(effects
 				(font
@@ -3452,7 +3485,7 @@
 				(justify left top)
 			)
 		)
-		(pin "NSPK_SD" input
+		(pin "~{SPK_SD}" input
 			(at 105.41 96.52 180)
 			(effects
 				(font
@@ -3462,7 +3495,7 @@
 			)
 			(uuid "c2f3adf7-b4c3-486e-8431-0656d6885070")
 		)
-		(pin "LRCK" input
+		(pin "TDM_FS" input
 			(at 105.41 83.82 180)
 			(effects
 				(font
@@ -3472,7 +3505,7 @@
 			)
 			(uuid "8ab01b14-c6f3-463b-882d-090b7b6a59bb")
 		)
-		(pin "SDIN" input
+		(pin "TDM_SDI" input
 			(at 105.41 88.9 180)
 			(effects
 				(font
@@ -3482,7 +3515,7 @@
 			)
 			(uuid "87b4bd54-bea9-40df-82b4-b3bf7a44d2b4")
 		)
-		(pin "SCLK" input
+		(pin "TDM_SCK" input
 			(at 105.41 86.36 180)
 			(effects
 				(font
