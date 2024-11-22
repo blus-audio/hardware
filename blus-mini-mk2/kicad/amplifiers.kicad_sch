@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "blus mini mk2")
-		(date "2024-06-04")
-		(rev "a")
+		(date "2024-11-22")
+		(rev "b")
 		(company "elagil")
 	)
 	(lib_symbols
