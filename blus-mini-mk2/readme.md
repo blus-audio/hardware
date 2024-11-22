@@ -1,22 +1,22 @@
 # Blus mini
 
 This small amplifier is ideally suited for stereo pairs of two-way speakers.
-With two connected amplifier boards, you can power four drivers per side.
 
-![front](./kicad/front.png)
+![front](./img/2024-11-22_Blus_0005.jpg)
+![back](./img/2024-11-22_Blus_0010.jpg)
 
-Find [SigmaStudio template files](./sigma_studio/) for setting up the amplifier for different speaker combinations, as well as the [hardware design files](./kicad/) for reference.
+Find the [hardware design files](./kicad/) for reference.
+It is required to flash the corresponding [firmware]((https://github.com/blus-audio/firmware-rs)).
 
 ## Features
 
-- Analog Devices [ADAU1452 DSP](https://www.analog.com/en/products/adau1452.html)
 - 4x25 W Class-D amplifiers - the [TAS2780](https://www.ti.com/product/TAS2780)
-- [USB Audio interface](https://github.com/blus-audio/firmware) (UAC 1.0) with up to 96 kHz/32 bit audio on [STM32F401Rx](https://www.st.com/en/microcontrollers-microprocessors/stm32f401.html)
+- USB Audio interface (UAC 1.0) with up to 48 kHz/32 bit audio on [STM32H723](https://www.st.com/en/microcontrollers-microprocessors/stm32h723-733.html)
 - Raspberry Pi header for direct I2S audio streaming
 - S/PDIF input and output
-- Auxiliary I2S input and output
+- Auxiliary I2S input or output
 - Full 32 bit digital audio chain with analog conversion only in the amplifiers
 
 ## State of development
 
-This amplifier board is not yet fully tested. Do not build before a release.
+The amplifier has fully tested for an extended period of time.
