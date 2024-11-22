@@ -10,8 +10,9 @@ It is required to flash the corresponding [firmware]((https://github.com/blus-au
 
 ## Features
 
-- 4x25 W Class-D amplifiers - the [TAS2780](https://www.ti.com/product/TAS2780)
-- USB Audio interface (UAC 1.0) with up to 48 kHz/32 bit audio on [STM32H723](https://www.st.com/en/microcontrollers-microprocessors/stm32h723-733.html)
+- Source switching, digital signal processing, and more on a powerful STM32H723
+- 4x25 W Class-D amplifiers - the [TI TAS2780](https://www.ti.com/product/TAS2780)
+- USB Audio interface (UAC 1.0) with up to 48 kHz/32 bit audio
 - Raspberry Pi header for direct I2S audio streaming
 - S/PDIF input and output
 - Auxiliary I2S input or output
@@ -19,4 +20,4 @@ It is required to flash the corresponding [firmware]((https://github.com/blus-au
 
 ## State of development
 
-The amplifier has fully tested for an extended period of time.
+The amplifier has been fully tested for an extended period of time.
