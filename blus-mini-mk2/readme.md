@@ -1,4 +1,4 @@
-# Blus mini
+# Blus mini mk2
 
 This small amplifier is ideally suited for stereo pairs of two-way speakers.
 
