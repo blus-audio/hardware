@@ -6,7 +6,7 @@ This small amplifier is ideally suited for stereo pairs of two-way speakers.
 ![back](./img/2024-11-22_Blus_0010.jpg)
 
 Find the [hardware design files](./kicad/) for reference.
-It is required to flash the corresponding [firmware]((https://github.com/blus-audio/firmware-rs)).
+It is required to flash the corresponding [firmware](https://github.com/blus-audio/firmware-rs).
 
 ## Features
 
